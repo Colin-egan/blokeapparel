@@ -389,6 +389,26 @@ p:last-child { margin-bottom: 0; }
 .mascot-lg { height: 64px; width: auto; margin-bottom: 18px; }
 .mascot-flip { transform: scaleX(-1); }
 
+/* Kiwi easter egg — perched on top of a word, like it just landed there */
+.kiwi-perch {
+  position: relative;
+  display: inline-block;
+}
+.kiwi-perch-bird {
+  position: absolute;
+  bottom: calc(100% + 3px);
+  left: 50%;
+  height: 26px;
+  width: auto;
+  transform: translateX(-73%) rotate(-6deg);
+  transform-origin: bottom center;
+  pointer-events: none;
+  user-select: none;
+}
+@media (max-width: 560px) {
+  .kiwi-perch-bird { display: none; }
+}
+
 .tag-grid h3 {
   font-size: 22px;
 }
@@ -567,6 +587,20 @@ p:last-child { margin-bottom: 0; }
 }
 .photo-grid li:hover img { transform: scale(1.06); }
 
+/* Kiwi easter egg — tucked behind a photo, peeking out at the corner */
+.photo-grid li.shopfloor-peek { overflow: visible; }
+.photo-grid .shopfloor-peek img:not(.kiwi-peek) { position: relative; }
+.photo-grid .kiwi-peek {
+  position: absolute;
+  bottom: -10px;
+  right: -12px;
+  height: 34px;
+  width: auto;
+  transform: scaleX(-1) rotate(8deg);
+  pointer-events: none;
+  user-select: none;
+}
+
 @media (max-width: 900px) {
   .photo-grid { grid-template-columns: repeat(4, 1fr); grid-auto-rows: 140px; }
   .photo-grid li:nth-child(6n+1), .photo-grid li:nth-child(6n+4) { grid-row: span 1; }
@@ -575,6 +609,7 @@ p:last-child { margin-bottom: 0; }
 @media (max-width: 560px) {
   .photo-grid { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 150px; }
   .photo-grid li:nth-child(4n+1) { grid-row: span 1; }
+  .photo-grid .kiwi-peek { height: 26px; bottom: -7px; right: -8px; }
 }
 
 /* ---------------------------------------------------
