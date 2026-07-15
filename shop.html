@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shop All — Bloke Apparel & Supply</title>
+<meta name="description" content="Shop every department at Bloke Apparel & Supply: shirts, tees, denim, knitwear, shoes, accessories, personal care, and travel gear.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&family=Archivo:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="wrap header-row">
+    <a href="index.html" class="wordmark" aria-label="Bloke Apparel & Supply, home">
+      <img src="images/logo-bloke.png" alt="Bloke Apparel & Supply" class="wordmark-logo">
+    </a>
+
+    <nav class="main-nav" aria-label="Departments">
+      <ul>
+        <li><a href="shop.html#shirts">Shirts</a></li>
+        <li><a href="shop.html#tees">Tees</a></li>
+        <li><a href="shop.html#denim">Denim</a></li>
+        <li><a href="shop.html#knitwear">Knitwear</a></li>
+        <li><a href="shop.html#shoes">Shoes</a></li>
+        <li><a href="shop.html#accessories">Accessories</a></li>
+        <li><a href="shop.html#personal-care">Personal Care</a></li>
+        <li><a href="shop.html#travel">Travel+</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <a href="index.html#giftcard" class="tag-link">Gift Card</a>
+      <button type="button" class="icon-btn cart-btn" data-cart-open aria-label="Open cart">
+        <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        <span class="cart-badge" data-cart-count>0</span>
+      </button>
+      <button class="icon-btn" type="button" aria-label="Open menu" id="menuToggle">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="shop-hero">
+    <div class="wrap">
+      <p class="eyebrow">Shop all</p>
+      <h1>Everything in stock, one page.</h1>
+      <p class="shop-hero-sub">116 pieces, tagged and priced. Filter by department or scroll the lot.</p>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="filter-bar" role="tablist" aria-label="Filter by department" id="filterBar">
+      <button type="button" class="filter-pill is-active" data-filter="all">All</button>
+      <button type="button" class="filter-pill" data-filter="shirts">Shirts</button>
+      <button type="button" class="filter-pill" data-filter="tees">Tees</button>
+      <button type="button" class="filter-pill" data-filter="shorts">Shorts</button>
+      <button type="button" class="filter-pill" data-filter="denim">Denim / Pants</button>
+      <button type="button" class="filter-pill" data-filter="knitwear">Knitwear</button>
+      <button type="button" class="filter-pill" data-filter="shoes">Shoes</button>
+      <button type="button" class="filter-pill" data-filter="accessories">Accessories</button>
+      <button type="button" class="filter-pill" data-filter="personal-care">Personal Care</button>
+      <button type="button" class="filter-pill" data-filter="travel">Travel +</button>
+    </div>
+  </div>
+
+  <section class="shop-grid-section">
+    <div class="wrap">
+      <p class="shop-count" id="shopCount"></p>
+      <ul class="shop-grid" id="shopGrid"></ul>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <img src="images/logo-bloke.png" alt="Bloke Apparel & Supply" class="footer-wordmark">
+      <p class="footer-note">A curated selection of men's clothing, and a
+        variety of accessories and gift items.</p>
+    </div>
+
+    <div class="footer-col">
+      <p class="footer-heading">Departments</p>
+      <ul>
+        <li><a href="shop.html#shirts">Shirts</a></li>
+        <li><a href="shop.html#tees">Tees</a></li>
+        <li><a href="shop.html#shorts">Shorts</a></li>
+        <li><a href="shop.html#denim">Denim / Pants</a></li>
+        <li><a href="shop.html#knitwear">Knitwear</a></li>
+        <li><a href="shop.html#shoes">Shoes</a></li>
+        <li><a href="shop.html#accessories">Accessories</a></li>
+        <li><a href="shop.html#personal-care">Personal Care</a></li>
+        <li><a href="shop.html#travel">Travel +</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <p class="footer-heading">Visit</p>
+      <ul>
+        <li>Pickup &amp; shipping available</li>
+        <li>Returns within 14 days, tags on</li>
+        <li>Sale &amp; clearance items are final sale</li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <p class="footer-heading">Shop</p>
+      <ul>
+        <li><a href="index.html#giftcard">Gift cards</a></li>
+        <li><a href="index.html#edit">Our approach</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="wrap footer-bottom">
+    <p>&copy; <span id="year"></span> Bloke Apparel &amp; Supply.</p>
+  </div>
+</footer>
+
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/shop.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

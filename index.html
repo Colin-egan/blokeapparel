@@ -22,19 +22,23 @@
 
     <nav class="main-nav" aria-label="Departments">
       <ul>
-        <li><a href="#departments">Shirts</a></li>
-        <li><a href="#departments">Tees</a></li>
-        <li><a href="#departments">Denim</a></li>
-        <li><a href="#departments">Knitwear</a></li>
-        <li><a href="#departments">Shoes</a></li>
-        <li><a href="#beyond">Accessories</a></li>
-        <li><a href="#beyond">Personal Care</a></li>
-        <li><a href="#beyond">Travel+</a></li>
+        <li><a href="shop.html#shirts">Shirts</a></li>
+        <li><a href="shop.html#tees">Tees</a></li>
+        <li><a href="shop.html#denim">Denim</a></li>
+        <li><a href="shop.html#knitwear">Knitwear</a></li>
+        <li><a href="shop.html#shoes">Shoes</a></li>
+        <li><a href="shop.html#accessories">Accessories</a></li>
+        <li><a href="shop.html#personal-care">Personal Care</a></li>
+        <li><a href="shop.html#travel">Travel+</a></li>
       </ul>
     </nav>
 
     <div class="header-actions">
       <a href="#giftcard" class="tag-link">Gift Card</a>
+      <button type="button" class="icon-btn cart-btn" data-cart-open aria-label="Open cart">
+        <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        <span class="cart-badge" data-cart-count>0</span>
+      </button>
       <button class="icon-btn" type="button" aria-label="Open menu" id="menuToggle">
         <span></span><span></span><span></span>
       </button>
@@ -60,7 +64,7 @@
         shop floor you see behind this text, not picked from a warehouse spreadsheet.
       </p>
       <div class="hero-ctas reveal">
-        <a href="#departments" class="btn btn-primary">Shop the departments</a>
+        <a href="shop.html" class="btn btn-primary">Shop the departments</a>
         <a href="#edit" class="btn btn-ghost">Read how we pick</a>
       </div>
     </div>
@@ -98,41 +102,53 @@
       </div>
 
       <ul class="tag-grid">
-        <li class="stock-tag reveal">
-          <div class="stock-tag-hole"></div>
-          <div class="stock-tag-photo"><img src="images/dept-shirts.webp" alt="Navy short-sleeve camp shirt, flat lay"></div>
-          <p class="stock-tag-no">No. 01</p>
-          <h3>Shirts</h3>
+        <li class="reveal">
+          <a class="stock-tag" href="shop.html#shirts">
+            <div class="stock-tag-hole"></div>
+            <div class="stock-tag-photo"><img src="images/dept-shirts.webp" alt="Navy short-sleeve camp shirt, flat lay"></div>
+            <p class="stock-tag-no">No. 01</p>
+            <h3>Shirts</h3>
+          </a>
         </li>
-        <li class="stock-tag reveal">
-          <div class="stock-tag-hole"></div>
-          <div class="stock-tag-photo"><img src="images/dept-tees.webp" alt="Iron &amp; Resin graphic t-shirt, flat lay"></div>
-          <p class="stock-tag-no">No. 02</p>
-          <h3>Tees</h3>
+        <li class="reveal">
+          <a class="stock-tag" href="shop.html#tees">
+            <div class="stock-tag-hole"></div>
+            <div class="stock-tag-photo"><img src="images/dept-tees.webp" alt="Iron &amp; Resin graphic t-shirt, flat lay"></div>
+            <p class="stock-tag-no">No. 02</p>
+            <h3>Tees</h3>
+          </a>
         </li>
-        <li class="stock-tag reveal">
-          <div class="stock-tag-hole"></div>
-          <div class="stock-tag-photo"><img src="images/dept-shorts.webp" alt="Striped blue and cream shorts, flat lay"></div>
-          <p class="stock-tag-no">No. 03</p>
-          <h3>Shorts</h3>
+        <li class="reveal">
+          <a class="stock-tag" href="shop.html#shorts">
+            <div class="stock-tag-hole"></div>
+            <div class="stock-tag-photo"><img src="images/dept-shorts.webp" alt="Striped blue and cream shorts, flat lay"></div>
+            <p class="stock-tag-no">No. 03</p>
+            <h3>Shorts</h3>
+          </a>
         </li>
-        <li class="stock-tag reveal">
-          <div class="stock-tag-hole"></div>
-          <div class="stock-tag-photo"><img src="images/dept-denim.webp" alt="Dark raw denim jeans, flat lay"></div>
-          <p class="stock-tag-no">No. 04</p>
-          <h3>Denim / Pants</h3>
+        <li class="reveal">
+          <a class="stock-tag" href="shop.html#denim">
+            <div class="stock-tag-hole"></div>
+            <div class="stock-tag-photo"><img src="images/dept-denim.webp" alt="Dark raw denim jeans, flat lay"></div>
+            <p class="stock-tag-no">No. 04</p>
+            <h3>Denim / Pants</h3>
+          </a>
         </li>
-        <li class="stock-tag reveal">
-          <div class="stock-tag-hole"></div>
-          <div class="stock-tag-photo"><img src="images/dept-knitwear.webp" alt="Cream and navy striped sweater, flat lay"></div>
-          <p class="stock-tag-no">No. 05</p>
-          <h3>Knitwear</h3>
+        <li class="reveal">
+          <a class="stock-tag" href="shop.html#knitwear">
+            <div class="stock-tag-hole"></div>
+            <div class="stock-tag-photo"><img src="images/dept-knitwear.webp" alt="Cream and navy striped sweater, flat lay"></div>
+            <p class="stock-tag-no">No. 05</p>
+            <h3>Knitwear</h3>
+          </a>
         </li>
-        <li class="stock-tag reveal">
-          <div class="stock-tag-photo"><img src="images/dept-shoes.webp" alt="White leather sneakers with a gum sole"></div>
-          <div class="stock-tag-hole"></div>
-          <p class="stock-tag-no">No. 06</p>
-          <h3>Shoes</h3>
+        <li class="reveal">
+          <a class="stock-tag" href="shop.html#shoes">
+            <div class="stock-tag-photo"><img src="images/dept-shoes.webp" alt="White leather sneakers with a gum sole"></div>
+            <div class="stock-tag-hole"></div>
+            <p class="stock-tag-no">No. 06</p>
+            <h3>Shoes</h3>
+          </a>
         </li>
       </ul>
     </div>
@@ -176,7 +192,7 @@
         <h2>The stuff you forget until you need it.</h2>
       </div>
       <div class="beyond-grid">
-        <article class="beyond-card reveal">
+        <a class="beyond-card reveal" href="shop.html#personal-care">
           <div class="beyond-media"><img src="images/dept-personalcare.webp" alt="Zeus beard oil bottle and box, Verbena Lime"></div>
           <div class="beyond-copy">
             <p class="stock-tag-no">No. 07</p>
@@ -185,8 +201,8 @@
               Grooming gear picked the same way we pick a shirt — does it hold
               up, day after day.</p>
           </div>
-        </article>
-        <article class="beyond-card reveal">
+        </a>
+        <a class="beyond-card reveal" href="shop.html#accessories">
           <div class="beyond-media"><img src="images/dept-accessories.webp" alt="Gold signet ring"></div>
           <div class="beyond-copy">
             <p class="stock-tag-no">No. 08</p>
@@ -194,8 +210,8 @@
             <p>Rings, cuffs, a pocket knife worth carrying. The small stuff
               that actually gets worn, not the stuff that sits in a drawer.</p>
           </div>
-        </article>
-        <article class="beyond-card reveal">
+        </a>
+        <a class="beyond-card reveal" href="shop.html#travel">
           <div class="beyond-media"><img src="images/dept-travel.webp" alt="Black Herschel backpack"></div>
           <div class="beyond-copy">
             <p class="stock-tag-no">No. 09</p>
@@ -203,7 +219,7 @@
             <p>Bags, dopp kits, the small stuff that makes a weekend away
               actually work. Built for the overhead bin, not the runway.</p>
           </div>
-        </article>
+        </a>
       </div>
     </div>
   </section>
@@ -262,15 +278,15 @@
     <div class="footer-col">
       <p class="footer-heading">Departments</p>
       <ul>
-        <li><a href="#departments">Shirts</a></li>
-        <li><a href="#departments">Tees</a></li>
-        <li><a href="#departments">Shorts</a></li>
-        <li><a href="#departments">Denim / Pants</a></li>
-        <li><a href="#departments">Knitwear</a></li>
-        <li><a href="#departments">Shoes</a></li>
-        <li><a href="#beyond">Accessories</a></li>
-        <li><a href="#beyond">Personal Care</a></li>
-        <li><a href="#beyond">Travel +</a></li>
+        <li><a href="shop.html#shirts">Shirts</a></li>
+        <li><a href="shop.html#tees">Tees</a></li>
+        <li><a href="shop.html#shorts">Shorts</a></li>
+        <li><a href="shop.html#denim">Denim / Pants</a></li>
+        <li><a href="shop.html#knitwear">Knitwear</a></li>
+        <li><a href="shop.html#shoes">Shoes</a></li>
+        <li><a href="shop.html#accessories">Accessories</a></li>
+        <li><a href="shop.html#personal-care">Personal Care</a></li>
+        <li><a href="shop.html#travel">Travel +</a></li>
       </ul>
     </div>
 
@@ -297,6 +313,8 @@
   </div>
 </footer>
 
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

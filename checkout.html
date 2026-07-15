@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Checkout — Bloke Apparel & Supply</title>
+<meta name="description" content="Checkout at Bloke Apparel & Supply.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&family=Archivo:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="wrap header-row">
+    <a href="index.html" class="wordmark" aria-label="Bloke Apparel & Supply, home">
+      <img src="images/logo-bloke.png" alt="Bloke Apparel & Supply" class="wordmark-logo">
+    </a>
+    <p class="checkout-flag">Secure checkout &middot; Demo store, no charge will be made</p>
+    <div class="header-actions">
+      <a href="shop.html" class="tag-link">Continue shopping</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="checkout-section">
+    <div class="wrap checkout-inner" id="checkoutInner">
+
+      <div class="checkout-empty" id="checkoutEmpty" hidden>
+        <p class="eyebrow">Your bag is empty</p>
+        <h1>Nothing to check out yet.</h1>
+        <p>Go tag a few things first.</p>
+        <a href="shop.html" class="btn btn-primary">Shop all</a>
+      </div>
+
+      <form class="checkout-form" id="checkoutForm">
+        <div class="checkout-col">
+
+          <fieldset class="checkout-fieldset">
+            <legend>Contact</legend>
+            <label class="field">
+              <span>Email</span>
+              <input type="email" name="email" required placeholder="you@example.com">
+            </label>
+          </fieldset>
+
+          <fieldset class="checkout-fieldset">
+            <legend>Shipping address</legend>
+            <div class="field-row">
+              <label class="field">
+                <span>First name</span>
+                <input type="text" name="firstName" required placeholder="Jordan">
+              </label>
+              <label class="field">
+                <span>Last name</span>
+                <input type="text" name="lastName" required placeholder="Marsh">
+              </label>
+            </div>
+            <label class="field">
+              <span>Address</span>
+              <input type="text" name="address" required placeholder="123 Main Street">
+            </label>
+            <div class="field-row field-row-3">
+              <label class="field">
+                <span>City</span>
+                <input type="text" name="city" required placeholder="Portland">
+              </label>
+              <label class="field">
+                <span>State</span>
+                <input type="text" name="state" required placeholder="OR">
+              </label>
+              <label class="field">
+                <span>ZIP</span>
+                <input type="text" name="zip" required placeholder="97201">
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset class="checkout-fieldset">
+            <legend>Payment <span class="demo-tag">Demo &mdash; not processed</span></legend>
+            <label class="field">
+              <span>Card number</span>
+              <input type="text" name="cardNumber" inputmode="numeric" placeholder="4242 4242 4242 4242" maxlength="19" id="cardNumberInput">
+            </label>
+            <div class="field-row">
+              <label class="field">
+                <span>Expiry</span>
+                <input type="text" name="expiry" placeholder="MM / YY" maxlength="7" id="expiryInput">
+              </label>
+              <label class="field">
+                <span>CVC</span>
+                <input type="text" name="cvc" inputmode="numeric" placeholder="123" maxlength="4">
+              </label>
+            </div>
+          </fieldset>
+
+          <button type="submit" class="btn btn-primary checkout-submit">Place order</button>
+          <p class="checkout-disclaimer">This is a demo store. No payment is collected and no order is actually placed.</p>
+        </div>
+
+        <aside class="checkout-summary">
+          <p class="checkout-summary-title">Order summary</p>
+          <div id="checkoutLines"></div>
+          <div class="checkout-totals" id="checkoutTotals"></div>
+        </aside>
+      </form>
+
+      <div class="checkout-confirmation" id="checkoutConfirmation" hidden>
+        <div class="stock-tag confirmation-tag">
+          <div class="stock-tag-hole"></div>
+          <p class="stock-tag-label">Order confirmed</p>
+          <p class="stock-tag-no" id="confirmationOrderNo">No. 0000</p>
+        </div>
+        <h1>Nice one. That's sorted.</h1>
+        <p>A confirmation would normally land in your inbox. This is a demo, so
+          nothing was actually charged or shipped — but the tag's yours.</p>
+        <a href="shop.html" class="btn btn-primary">Keep browsing</a>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-bottom">
+    <p>&copy; <span id="year"></span> Bloke Apparel &amp; Supply.</p>
+  </div>
+</footer>
+
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/checkout.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
