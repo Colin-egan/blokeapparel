@@ -1,814 +1,930 @@
 const PRODUCTS = [
   {
     "id": "p000",
-    "name": "Raw Selvedge Jeans",
+    "name": "A.R. Denim / Harlan / Dark",
     "dept": "denim",
-    "price": 148,
+    "price": 228,
+    "priceHigh": null,
     "img": "images/shop/p000.webp"
   },
   {
     "id": "p001",
-    "name": "Custom Garage Graphic Tee",
+    "name": "Iron & Resin / Garage Shirt",
     "dept": "tees",
-    "price": 38,
+    "price": 39,
+    "priceHigh": null,
     "img": "images/shop/p001.webp"
   },
   {
     "id": "p002",
-    "name": "Charcoal Pocket Tee",
+    "name": "A.R. / Tee / Carbon",
     "dept": "tees",
-    "price": 32,
+    "price": 55,
+    "priceHigh": null,
     "img": "images/shop/p002.webp"
   },
   {
     "id": "p003",
-    "name": "Blue Stripe Knit Camp Shirt",
+    "name": "Mavrans / Strike Match Shirt",
     "dept": "shirts",
-    "price": 78,
+    "price": 99,
+    "priceHigh": null,
     "img": "images/shop/p003.webp"
   },
   {
     "id": "p004",
-    "name": "Black Crewneck Sweater",
-    "dept": "knitwear",
-    "price": 98,
+    "name": "DL1961 / Nick / Social",
+    "dept": "denim",
+    "price": 218,
+    "priceHigh": null,
     "img": "images/shop/p004.webp"
   },
   {
     "id": "p005",
-    "name": "Two-Tone Stripe Sweater",
+    "name": "CS / Rothko / Black",
     "dept": "knitwear",
-    "price": 108,
+    "price": 98,
+    "priceHigh": null,
     "img": "images/shop/p005.webp"
   },
   {
     "id": "p006",
-    "name": "Sea Salt Texturizing Spray",
+    "name": "Zeus / Sea Salt Grooming Spray / Verbena",
     "dept": "personal-care",
-    "price": 22,
+    "price": 20,
+    "priceHigh": null,
     "img": "images/shop/p006.webp"
   },
   {
     "id": "p007",
-    "name": "Brio Cologne",
+    "name": "Alfred Lane / Roll On Cologne / Brio",
     "dept": "personal-care",
-    "price": 58,
+    "price": 44,
+    "priceHigh": null,
     "img": "images/shop/p007.webp"
   },
   {
     "id": "p008",
-    "name": "Olive Chino Shorts",
+    "name": "Iron & Resin / Brigade Short / Army",
     "dept": "shorts",
-    "price": 58,
+    "price": 89,
+    "priceHigh": null,
     "img": "images/shop/p008.webp"
   },
   {
     "id": "p009",
-    "name": "Brio Solid Cologne Tin",
+    "name": "Alfred Lane / Solid Cologne / Brio",
     "dept": "personal-care",
-    "price": 24,
+    "price": 22,
+    "priceHigh": null,
     "img": "images/shop/p009.webp"
   },
   {
     "id": "p010",
-    "name": "Bravado Solid Cologne Tin",
+    "name": "Alfred Lane / Solid Cologne / Bravado",
     "dept": "personal-care",
-    "price": 24,
+    "price": 22,
+    "priceHigh": null,
     "img": "images/shop/p010.webp"
   },
   {
     "id": "p011",
-    "name": "Grey Haven Natural Deodorant",
+    "name": "Misc Goods / Deo / Grey Haven",
     "dept": "personal-care",
-    "price": 16,
+    "price": 15,
+    "priceHigh": null,
     "img": "images/shop/p011.webp"
   },
   {
     "id": "p012",
-    "name": "Campo Low Sneaker \u2014 Black",
+    "name": "Veja / Campo / Black Leather",
     "dept": "shoes",
-    "price": 150,
+    "price": 160,
+    "priceHigh": null,
     "img": "images/shop/p012.webp"
   },
   {
     "id": "p013",
-    "name": "Valley of Gold Deodorant",
+    "name": "Misc Goods / Deo / Valley Of Gold",
     "dept": "personal-care",
-    "price": 16,
+    "price": 15,
+    "priceHigh": null,
     "img": "images/shop/p013.webp"
   },
   {
     "id": "p014",
-    "name": "Diagonal Brass Signet Ring",
+    "name": "Brass Square Striped Ring: 11",
     "dept": "accessories",
-    "price": 62,
+    "price": 45,
+    "priceHigh": null,
     "img": "images/shop/p014.webp"
   },
   {
     "id": "p015",
-    "name": "Sea Salt Bar Soap",
+    "name": "Swedish Dream / Sea Salt Soap",
     "dept": "personal-care",
-    "price": 12,
+    "price": 9,
+    "priceHigh": null,
     "img": "images/shop/p015.webp"
   },
   {
     "id": "p016",
-    "name": "Abalone Handle Pocket Knife",
+    "name": "Abalone Inlay Folding Knife",
     "dept": "accessories",
-    "price": 88,
+    "price": 40,
+    "priceHigh": null,
     "img": "images/shop/p016.webp"
   },
   {
     "id": "p017",
-    "name": "Charcoal Pinstripe Shorts",
+    "name": "Holbrook / Black",
     "dept": "shorts",
-    "price": 54,
+    "price": 62,
+    "priceHigh": 78.0,
     "img": "images/shop/p017.webp"
   },
   {
     "id": "p018",
-    "name": "Amber Stone Ring",
+    "name": "Reversible Tiger Eyes / Onyx Men Ring: 11",
     "dept": "accessories",
-    "price": 68,
+    "price": 45,
+    "priceHigh": null,
     "img": "images/shop/p018.webp"
   },
   {
     "id": "p019",
-    "name": "White Crewneck Tee",
+    "name": "A.R. / Tee / Chalk",
     "dept": "tees",
-    "price": 30,
+    "price": 55,
+    "priceHigh": null,
     "img": "images/shop/p019.webp"
   },
   {
     "id": "p020",
-    "name": "Cream Crewneck Sweater",
-    "dept": "knitwear",
-    "price": 98,
+    "name": "DL1961 / Nick / Soft Beige",
+    "dept": "denim",
+    "price": 198,
+    "priceHigh": null,
     "img": "images/shop/p020.webp"
   },
   {
     "id": "p021",
-    "name": "Brass Cuff Bracelet",
+    "name": "Diamond Flat Top Brass Cuff",
     "dept": "accessories",
-    "price": 46,
+    "price": 45,
+    "priceHigh": null,
     "img": "images/shop/p021.webp"
   },
   {
     "id": "p022",
-    "name": "Icelandic Ash Soap",
+    "name": "Hall\u00f3 S\u00e1pa / Icelandic Ash Soap",
     "dept": "personal-care",
-    "price": 14,
+    "price": 9,
+    "priceHigh": null,
     "img": "images/shop/p022.webp"
   },
   {
     "id": "p023",
-    "name": "Blue Stripe Shorts",
+    "name": "Mavrans / Strike Match Short",
     "dept": "shorts",
-    "price": 58,
+    "price": 99,
+    "priceHigh": null,
     "img": "images/shop/p023.webp"
   },
   {
     "id": "p024",
-    "name": "Tortoise Shell Lighter Case",
+    "name": "Tortoise Zippo Style Lighter",
     "dept": "accessories",
-    "price": 28,
+    "price": 40,
+    "priceHigh": null,
     "img": "images/shop/p024.webp"
   },
   {
     "id": "p025",
-    "name": "Woven Metal Bracelet",
+    "name": "Steel Screw Cuff: 6in",
     "dept": "accessories",
-    "price": 38,
+    "price": 45,
+    "priceHigh": null,
     "img": "images/shop/p025.webp"
   },
   {
     "id": "p026",
-    "name": "Little America Backpack \u2014 Black",
+    "name": "Herschel / Retreat / Black",
     "dept": "travel",
-    "price": 100,
+    "price": 150,
+    "priceHigh": null,
     "img": "images/shop/p026.webp"
   },
   {
     "id": "p027",
-    "name": "Good Bloke Lip Balm",
+    "name": "Moisturizing Lip Balm for Men",
     "dept": "personal-care",
-    "price": 6,
+    "price": 4,
+    "priceHigh": null,
     "img": "images/shop/p027.webp"
   },
   {
     "id": "p028",
-    "name": "Under Hill Natural Deodorant",
+    "name": "Misc Goods / Deo / Underhill",
     "dept": "personal-care",
-    "price": 16,
+    "price": 15,
+    "priceHigh": null,
     "img": "images/shop/p028.webp"
   },
   {
     "id": "p029",
-    "name": "Black Twill Shorts",
+    "name": "Casablanca Short / Black",
     "dept": "shorts",
-    "price": 54,
+    "price": 74,
+    "priceHigh": null,
     "img": "images/shop/p029.webp"
   },
   {
     "id": "p030",
-    "name": "Black Selvedge Jeans",
+    "name": "A.R. Denim / Brodie / Black",
     "dept": "denim",
-    "price": 148,
+    "price": 228,
+    "priceHigh": null,
     "img": "images/shop/p030.webp"
   },
   {
     "id": "p031",
-    "name": "Merino Quarter-Zip Polo \u2014 Burgundy",
-    "dept": "shirts",
-    "price": 88,
+    "name": "DL1961 / Nick / Clearwater",
+    "dept": "denim",
+    "price": 208,
+    "priceHigh": null,
     "img": "images/shop/p031.webp"
   },
   {
     "id": "p032",
-    "name": "Turquoise Stone Ring",
+    "name": "Malachite Inlay Ring: 11",
     "dept": "accessories",
-    "price": 68,
+    "price": 45,
+    "priceHigh": null,
     "img": "images/shop/p032.webp"
   },
   {
     "id": "p033",
-    "name": "Campo Low Sneaker \u2014 Olive",
+    "name": "Veja / Rio Branco / Black",
     "dept": "shoes",
-    "price": 150,
+    "price": 160,
+    "priceHigh": null,
     "img": "images/shop/p033.webp"
   },
   {
     "id": "p034",
-    "name": "Braided Leather Bracelet",
+    "name": "Braided Leather Bracelet: Leather, 8\"",
     "dept": "accessories",
-    "price": 34,
+    "price": 45,
+    "priceHigh": null,
     "img": "images/shop/p034.webp"
   },
   {
     "id": "p035",
-    "name": "Retro Runner Sneaker \u2014 Tan",
+    "name": "Veja / Rio Branco / Tent",
     "dept": "shoes",
-    "price": 145,
+    "price": 170,
+    "priceHigh": null,
     "img": "images/shop/p035.webp"
   },
   {
     "id": "p036",
-    "name": "Diamond Knit Polo \u2014 Cream",
+    "name": "CS / Aleppo / Stone",
     "dept": "knitwear",
-    "price": 92,
+    "price": 80,
+    "priceHigh": null,
     "img": "images/shop/p036.webp"
   },
   {
     "id": "p037",
-    "name": "Tan Nylon Shorts",
+    "name": "Iron & Resin / Solimar Short",
     "dept": "shorts",
-    "price": 62,
+    "price": 109,
+    "priceHigh": null,
     "img": "images/shop/p037.webp"
   },
   {
     "id": "p038",
-    "name": "Open-Knit Mesh Polo \u2014 Black",
+    "name": "CS / Rapa Crop / Black",
     "dept": "knitwear",
-    "price": 84,
+    "price": 85,
+    "priceHigh": null,
     "img": "images/shop/p038.webp"
   },
   {
     "id": "p039",
-    "name": "Tiger Eye Beaded Bracelet",
+    "name": "Tiger Eyes Beaded Bracelet",
     "dept": "accessories",
-    "price": 42,
+    "price": 65,
+    "priceHigh": null,
     "img": "images/shop/p039.webp"
   },
   {
     "id": "p040",
-    "name": "Pinstripe Camp Shirt \u2014 Black",
+    "name": "CS / Braga / Black",
     "dept": "shirts",
-    "price": 78,
+    "price": 80,
+    "priceHigh": null,
     "img": "images/shop/p040.webp"
   },
   {
     "id": "p042",
-    "name": "Icelandic Kelp Soap",
+    "name": "Hallo Iceland Kelp Soap",
     "dept": "personal-care",
-    "price": 14,
+    "price": 9,
+    "priceHigh": null,
     "img": "images/shop/p042.webp"
   },
   {
     "id": "p043",
-    "name": "Campo Low Sneaker \u2014 White",
+    "name": "Veja / Campo / Natural",
     "dept": "shoes",
-    "price": 150,
+    "price": 160,
+    "priceHigh": null,
     "img": "images/shop/p043.webp"
   },
   {
     "id": "p044",
-    "name": "Tan Work Shirt",
+    "name": "CS / Linwood / Mocha",
     "dept": "shirts",
-    "price": 74,
+    "price": 65,
+    "priceHigh": 82.0,
     "img": "images/shop/p044.webp"
   },
   {
     "id": "p045",
-    "name": "Little America Backpack \u2014 Navy",
+    "name": "Herschel / Little American / Nay",
     "dept": "travel",
-    "price": 100,
+    "price": 180,
+    "priceHigh": null,
     "img": "images/shop/p045.webp"
   },
   {
     "id": "p046",
-    "name": "Marbled Resin Cuff",
+    "name": "Large Terrazzo Ashtray with Lighter Holder: Standard",
     "dept": "accessories",
-    "price": 44,
+    "price": 50,
+    "priceHigh": null,
     "img": "images/shop/p046.webp"
   },
   {
     "id": "p047",
-    "name": "Travel Grooming Tin Set",
+    "name": "Alfred Lane / Solid Cologne / Ace",
     "dept": "personal-care",
-    "price": 30,
+    "price": 28,
+    "priceHigh": null,
     "img": "images/shop/p047.webp"
   },
   {
     "id": "p048",
-    "name": "Custom Garage Trucker Hat",
+    "name": "Iron & Resin / Trapper Hat",
     "dept": "accessories",
-    "price": 34,
+    "price": 45,
+    "priceHigh": null,
     "img": "images/shop/p048.webp"
   },
   {
     "id": "p049",
-    "name": "Olive Utility Trousers",
+    "name": "CS / Chuck / Olive",
     "dept": "denim",
-    "price": 118,
+    "price": 78,
+    "priceHigh": 92.0,
     "img": "images/shop/p049.webp"
   },
   {
     "id": "p050",
-    "name": "Bravado Cologne",
+    "name": "Alfred Lane / Roll On Cologne / Ace",
     "dept": "personal-care",
-    "price": 58,
+    "price": 54,
+    "priceHigh": null,
     "img": "images/shop/p050.webp"
   },
   {
     "id": "p051",
-    "name": "Cropped Chore Jacket \u2014 Navy",
-    "dept": "shirts",
-    "price": 128,
+    "name": "DL1961 / Nick / Shadow",
+    "dept": "denim",
+    "price": 158,
+    "priceHigh": 198.0,
     "img": "images/shop/p051.webp"
   },
   {
     "id": "p052",
-    "name": "Olive Pocket Tee",
+    "name": "A.R. / Tee / Military",
     "dept": "tees",
-    "price": 32,
+    "price": 55,
+    "priceHigh": null,
     "img": "images/shop/p052.webp"
   },
   {
     "id": "p053",
-    "name": "Vanguard Solid Cologne Tin",
+    "name": "Alfred Lane / Solid Cologne / Vanguard",
     "dept": "personal-care",
-    "price": 24,
+    "price": 22,
+    "priceHigh": null,
     "img": "images/shop/p053.webp"
   },
   {
     "id": "p054",
-    "name": "Campo Low Sneaker \u2014 White/Green",
+    "name": "Veja / Campo / Cyprus",
     "dept": "shoes",
-    "price": 150,
+    "price": 160,
+    "priceHigh": null,
     "img": "images/shop/p054.webp"
   },
   {
     "id": "p055",
-    "name": "Tweed Shirt Jacket \u2014 Brown",
+    "name": "CS / Durbin / Hthr Brown",
     "dept": "shirts",
-    "price": 138,
+    "price": 100,
+    "priceHigh": null,
     "img": "images/shop/p055.webp"
   },
   {
     "id": "p056",
-    "name": "Pinstripe Camp Shirt \u2014 Pink",
+    "name": "CS / Javier / Clay",
     "dept": "shirts",
-    "price": 78,
+    "price": 80,
+    "priceHigh": null,
     "img": "images/shop/p056.webp"
   },
   {
     "id": "p057",
-    "name": "Brushed Silver Ring",
+    "name": "Horseshoe Ring: 11",
     "dept": "accessories",
-    "price": 58,
+    "price": 45,
+    "priceHigh": null,
     "img": "images/shop/p057.webp"
   },
   {
     "id": "p058",
-    "name": "Wool Shirt Jacket \u2014 Grey",
+    "name": "CS / Durbin / Grey",
     "dept": "shirts",
-    "price": 148,
+    "price": 100,
+    "priceHigh": null,
     "img": "images/shop/p058.webp"
   },
   {
     "id": "p059",
-    "name": "Tan Twill Shorts",
+    "name": "FC / Ripstop Short",
     "dept": "shorts",
-    "price": 58,
+    "price": 50,
+    "priceHigh": 68.0,
     "img": "images/shop/p059.webp"
   },
   {
     "id": "p060",
-    "name": "Little America Backpack \u2014 Navy/Tan",
+    "name": "Herschel / Retreat / Navy",
     "dept": "travel",
-    "price": 100,
+    "price": 150,
+    "priceHigh": null,
     "img": "images/shop/p060.webp"
   },
   {
     "id": "p061",
-    "name": "Pique Polo \u2014 White",
+    "name": "CS / Rancho / White",
     "dept": "shirts",
-    "price": 68,
+    "price": 80,
+    "priceHigh": null,
     "img": "images/shop/p061.webp"
   },
   {
     "id": "p062",
-    "name": "Campo Low Sneaker \u2014 Green/Navy",
+    "name": "Veja / Rio Branco / Nautico",
     "dept": "shoes",
-    "price": 150,
+    "price": 160,
+    "priceHigh": null,
     "img": "images/shop/p062.webp"
   },
   {
     "id": "p063",
-    "name": "Mid-Wash Straight Jeans",
+    "name": "A.R. Denim / Brodie / Dirty",
     "dept": "denim",
-    "price": 138,
+    "price": 228,
+    "priceHigh": 229.0,
     "img": "images/shop/p063.webp"
   },
   {
     "id": "p064",
-    "name": "Beard Oil \u2014 Tea Tree",
+    "name": "Zeus / Beard Oil / Tea Tree",
     "dept": "personal-care",
-    "price": 28,
+    "price": 26,
+    "priceHigh": null,
     "img": "images/shop/p064.webp"
   },
   {
     "id": "p065",
-    "name": "Beard Oil \u2014 Verbena Lime",
+    "name": "Zeus / Beard Oil / Verbena Lime",
     "dept": "personal-care",
-    "price": 28,
+    "price": 26,
+    "priceHigh": null,
     "img": "images/shop/p065.webp"
   },
   {
     "id": "p066",
-    "name": "Textured Stripe Shirt \u2014 Sage",
+    "name": "CS / Rancho / Sage",
     "dept": "shirts",
-    "price": 78,
+    "price": 80,
+    "priceHigh": null,
     "img": "images/shop/p066.webp"
   },
   {
     "id": "p067",
-    "name": "Olive Twill Shorts",
+    "name": "Lucas Short / Olive",
     "dept": "shorts",
-    "price": 58,
+    "price": 59,
+    "priceHigh": null,
     "img": "images/shop/p067.webp"
   },
   {
     "id": "p068",
-    "name": "Brass Cuff \u2014 Ridged",
+    "name": "Brass Screw Bracelet: 8in",
     "dept": "accessories",
-    "price": 46,
+    "price": 45,
+    "priceHigh": null,
     "img": "images/shop/p068.webp"
   },
   {
     "id": "p069",
-    "name": "Embroidered Camp Shirt \u2014 Blue",
+    "name": "CS / Ace / Dark Slate",
     "dept": "shirts",
-    "price": 88,
+    "price": 80,
+    "priceHigh": null,
     "img": "images/shop/p069.webp"
   },
   {
     "id": "p070",
-    "name": "Little America Backpack \u2014 Black/Tan",
+    "name": "Herschel / Shoulder Bag",
     "dept": "travel",
-    "price": 100,
+    "price": 60,
+    "priceHigh": null,
     "img": "images/shop/p070.webp"
   },
   {
     "id": "p071",
-    "name": "Navy Camp Shirt",
+    "name": "Mavrans / Out Of Office",
     "dept": "shirts",
-    "price": 74,
+    "price": 169,
+    "priceHigh": null,
     "img": "images/shop/p071.webp"
   },
   {
     "id": "p072",
-    "name": "Beard Oil \u2014 Sandalwood",
+    "name": "Zeus / Beard Oil / Sandalwood",
     "dept": "personal-care",
-    "price": 28,
+    "price": 26,
+    "priceHigh": null,
     "img": "images/shop/p072.webp"
   },
   {
     "id": "p073",
-    "name": "Icelandic Moss Soap",
+    "name": "Hallo Iceland Moss Soap",
     "dept": "personal-care",
-    "price": 14,
+    "price": 9,
+    "priceHigh": null,
     "img": "images/shop/p073.webp"
   },
   {
     "id": "p074",
-    "name": "Paisley Bandana Scarf",
+    "name": "Patchwork Bandana",
     "dept": "accessories",
-    "price": 24,
+    "price": 30,
+    "priceHigh": null,
     "img": "images/shop/p074.webp"
   },
   {
     "id": "p075",
-    "name": "Water-Soluble Cream Pomade",
+    "name": "Zeus / Pomade / Cream - Medium",
     "dept": "personal-care",
-    "price": 24,
+    "price": 18,
+    "priceHigh": null,
     "img": "images/shop/p075.webp"
   },
   {
     "id": "p076",
-    "name": "Take It Easy Graphic Tee",
+    "name": "Iron & Resin / Take It Easy Tee",
     "dept": "tees",
-    "price": 38,
+    "price": 49,
+    "priceHigh": null,
     "img": "images/shop/p076.webp"
   },
   {
     "id": "p077",
-    "name": "Campo Low Sneaker \u2014 Black/White",
+    "name": "Veja / Panenka / Black",
     "dept": "shoes",
-    "price": 150,
+    "price": 170,
+    "priceHigh": null,
     "img": "images/shop/p077.webp"
   },
   {
     "id": "p078",
-    "name": "Chambray Work Shirt",
+    "name": "Iron & Resin / Valley Shirt",
     "dept": "shirts",
-    "price": 74,
+    "price": 89,
+    "priceHigh": null,
     "img": "images/shop/p078.webp"
   },
   {
     "id": "p079",
-    "name": "Hemp Soap Bar",
+    "name": "Nordic Wellness / Hemp Soap",
     "dept": "personal-care",
-    "price": 12,
+    "price": 9,
+    "priceHigh": null,
     "img": "images/shop/p079.webp"
   },
   {
     "id": "p080",
-    "name": "Campo Low Sneaker \u2014 Off-White",
+    "name": "Veja / V90 / White Kaki",
     "dept": "shoes",
-    "price": 150,
+    "price": 185,
+    "priceHigh": null,
     "img": "images/shop/p080.webp"
   },
   {
     "id": "p081",
-    "name": "Ball Chain Bracelet",
+    "name": "5mm Ball Chain Bracelet: Brass",
     "dept": "accessories",
-    "price": 36,
+    "price": 45,
+    "priceHigh": null,
     "img": "images/shop/p081.webp"
   },
   {
     "id": "p082",
-    "name": "Green Stone Signet Ring",
+    "name": "Green Duo Triangle Ring: 11",
     "dept": "accessories",
-    "price": 68,
+    "price": 45,
+    "priceHigh": null,
     "img": "images/shop/p082.webp"
   },
   {
     "id": "p083",
-    "name": "Little America Backpack \u2014 Brown",
+    "name": "Herschel / City Backpack",
     "dept": "travel",
-    "price": 100,
+    "price": 75,
+    "priceHigh": null,
     "img": "images/shop/p083.webp"
   },
   {
     "id": "p084",
-    "name": "Grey Work Shirt",
+    "name": "CS / Linwood / Gray",
     "dept": "shirts",
-    "price": 74,
+    "price": 69,
+    "priceHigh": 88.0,
     "img": "images/shop/p084.webp"
   },
   {
     "id": "p085",
-    "name": "Campo Low Sneaker \u2014 White/Navy",
+    "name": "Veja / Campo / California",
     "dept": "shoes",
-    "price": 150,
+    "price": 175,
+    "priceHigh": null,
     "img": "images/shop/p085.webp"
   },
   {
     "id": "p086",
-    "name": "Water-Soluble Clay Pomade",
+    "name": "Zeus / Pomade / Clay - Firm",
     "dept": "personal-care",
-    "price": 24,
+    "price": 18,
+    "priceHigh": null,
     "img": "images/shop/p086.webp"
   },
   {
     "id": "p087",
-    "name": "Campo Low Sneaker \u2014 White/Black",
+    "name": "Veja / Campo / Black",
     "dept": "shoes",
-    "price": 150,
+    "price": 160,
+    "priceHigh": null,
     "img": "images/shop/p087.webp"
   },
   {
     "id": "p088",
-    "name": "Waffle Knit Tee \u2014 Cream",
+    "name": "CS / Shafa / Natural",
     "dept": "knitwear",
-    "price": 54,
+    "price": 64,
+    "priceHigh": null,
     "img": "images/shop/p088.webp"
   },
   {
     "id": "p089",
-    "name": "Dark Wash Straight Jeans",
+    "name": "A.R. Denim / Harlan / Medium",
     "dept": "denim",
-    "price": 138,
+    "price": 228,
+    "priceHigh": null,
     "img": "images/shop/p089.webp"
   },
   {
     "id": "p090",
-    "name": "Green Stripe Shorts",
+    "name": "Mavrans / Cabana Short / Emerald",
     "dept": "shorts",
-    "price": 58,
+    "price": 99,
+    "priceHigh": null,
     "img": "images/shop/p090.webp"
   },
   {
     "id": "p091",
-    "name": "Campo Low Sneaker \u2014 Black Mono",
+    "name": "Veja / Campo / Black Suede",
     "dept": "shoes",
-    "price": 150,
+    "price": 160,
+    "priceHigh": null,
     "img": "images/shop/p091.webp"
   },
   {
     "id": "p092",
-    "name": "Mama Tried Trucker Cap",
+    "name": "Iron & Resin / Mama Tried Hat",
     "dept": "accessories",
-    "price": 32,
+    "price": 39,
+    "priceHigh": null,
     "img": "images/shop/p092.webp"
   },
   {
     "id": "p093",
-    "name": "Vitamin C Soap Bar",
+    "name": "Nordic + Wellness / Vitamin C Soap",
     "dept": "personal-care",
-    "price": 12,
+    "price": 9,
+    "priceHigh": null,
     "img": "images/shop/p093.webp"
   },
   {
     "id": "p094",
-    "name": "Canvas Chore Jacket \u2014 Tan",
+    "name": "CS / Aldrich / Tobacco",
     "dept": "shirts",
-    "price": 128,
+    "price": 100,
+    "priceHigh": null,
     "img": "images/shop/p094.webp"
   },
   {
     "id": "p095",
-    "name": "Little America Backpack \u2014 Black Classic",
+    "name": "Herschel / Little America / Black",
     "dept": "travel",
-    "price": 100,
+    "price": 180,
+    "priceHigh": null,
     "img": "images/shop/p095.webp"
   },
   {
     "id": "p096",
-    "name": "Retro Runner Sneaker \u2014 Grey",
+    "name": "Veja / Paulistana / Ardois",
     "dept": "shoes",
-    "price": 145,
+    "price": 170,
+    "priceHigh": null,
     "img": "images/shop/p096.webp"
   },
   {
     "id": "p097",
-    "name": "Skull Brass Money Clip",
+    "name": "Skull brass money clip",
     "dept": "accessories",
-    "price": 38,
+    "price": 45,
+    "priceHigh": null,
     "img": "images/shop/p097.webp"
   },
   {
     "id": "p098",
-    "name": "Bravado Cologne \u2014 Boxed",
+    "name": "Alfred Lane / Roll On Cologne / Bravado",
     "dept": "personal-care",
-    "price": 58,
+    "price": 44,
+    "priceHigh": null,
     "img": "images/shop/p098.webp"
   },
   {
     "id": "p099",
-    "name": "Stripe Crewneck Sweater \u2014 Cream",
+    "name": "Mavrans / Stripe Knit / Emerald",
     "dept": "knitwear",
-    "price": 108,
+    "price": 179,
+    "priceHigh": null,
     "img": "images/shop/p099.webp"
   },
   {
     "id": "p100",
-    "name": "Turquoise Inlay Cuff",
+    "name": "Turquoise Inlay Bracelet: Brass",
     "dept": "accessories",
-    "price": 54,
+    "price": 65,
+    "priceHigh": null,
     "img": "images/shop/p100.webp"
   },
   {
     "id": "p101",
-    "name": "Knit Polo \u2014 Pale Yellow",
-    "dept": "knitwear",
-    "price": 88,
+    "name": "Mavrans / Oceanside Shirt",
+    "dept": "shirts",
+    "price": 139,
+    "priceHigh": null,
     "img": "images/shop/p101.webp"
   },
   {
     "id": "p102",
-    "name": "Open Brass Cuff",
+    "name": "Stacked Brass Bracelet: One Size",
     "dept": "accessories",
-    "price": 44,
+    "price": 45,
+    "priceHigh": null,
     "img": "images/shop/p102.webp"
   },
   {
     "id": "p103",
-    "name": "Black Crewneck Tee",
+    "name": "A.R. / Tee / Black",
     "dept": "tees",
-    "price": 32,
+    "price": 55,
+    "priceHigh": null,
     "img": "images/shop/p103.webp"
   },
   {
     "id": "p104",
-    "name": "Textured Knit Camp Shirt \u2014 Cream",
+    "name": "CS / Wake / Natural",
     "dept": "knitwear",
-    "price": 98,
+    "price": 80,
+    "priceHigh": null,
     "img": "images/shop/p104.webp"
   },
   {
     "id": "p105",
-    "name": "Slim Brass Cuff",
+    "name": "Flat Cuff: Brass",
     "dept": "accessories",
-    "price": 42,
+    "price": 45,
+    "priceHigh": null,
     "img": "images/shop/p105.webp"
   },
   {
     "id": "p106",
-    "name": "Meadowland Natural Deodorant",
+    "name": "Misc Goods / Deo / Meadowland",
     "dept": "personal-care",
-    "price": 16,
+    "price": 15,
+    "priceHigh": null,
     "img": "images/shop/p106.webp"
   },
   {
     "id": "p107",
-    "name": "Stripe Camp Shirt \u2014 Green",
+    "name": "Mavrans / Cabana Shirt / Emerald",
     "dept": "shirts",
-    "price": 78,
+    "price": 99,
+    "priceHigh": null,
     "img": "images/shop/p107.webp"
   },
   {
     "id": "p108",
-    "name": "Textured Shirt \u2014 Black",
+    "name": "CS / Merida / Black",
     "dept": "shirts",
-    "price": 74,
+    "price": 80,
+    "priceHigh": null,
     "img": "images/shop/p108.webp"
   },
   {
     "id": "p109",
-    "name": "Curved Blade Pocket Knife",
+    "name": "Ox-bone / Ox-horn Inlay Folding Knife: Black Ox-horn",
     "dept": "accessories",
-    "price": 82,
+    "price": 40,
+    "priceHigh": null,
     "img": "images/shop/p109.webp"
   },
   {
     "id": "p110",
-    "name": "Camp Shirt \u2014 Dark Green",
+    "name": "Iron & Resin / Howard Shirt",
     "dept": "shirts",
-    "price": 74,
+    "price": 59,
+    "priceHigh": null,
     "img": "images/shop/p110.webp"
   },
   {
     "id": "p111",
-    "name": "Campo Low Sneaker \u2014 Olive Mono",
+    "name": "Veja / V12 / Olive",
     "dept": "shoes",
-    "price": 150,
+    "price": 120,
+    "priceHigh": 160.0,
     "img": "images/shop/p111.webp"
   },
   {
     "id": "p112",
-    "name": "Blue Stone Ring",
+    "name": "Lapis Signet Ring: 11",
     "dept": "accessories",
-    "price": 68,
+    "price": 45,
+    "priceHigh": null,
     "img": "images/shop/p112.webp"
   },
   {
     "id": "p113",
-    "name": "Beard Oil \u2014 Original",
+    "name": "Zeus / Beard Oil / Italian Cypress",
     "dept": "personal-care",
-    "price": 28,
+    "price": 26,
+    "priceHigh": null,
     "img": "images/shop/p113.webp"
   },
   {
     "id": "p114",
-    "name": "Camo Print Camp Shirt",
+    "name": "Iron & Resin / Cactus Shirt",
     "dept": "shirts",
-    "price": 82,
+    "price": 99,
+    "priceHigh": null,
     "img": "images/shop/p114.webp"
   },
   {
     "id": "p115",
-    "name": "Beaded Chain Necklace",
+    "name": "5mm Ball Chain Necklace: Brass",
     "dept": "accessories",
-    "price": 48,
+    "price": 45,
+    "priceHigh": null,
     "img": "images/shop/p115.webp"
   },
   {
     "id": "p116",
-    "name": "Vanguard Cologne \u2014 Boxed",
+    "name": "Alfred Lane / Roll On Cologne / Vanguard",
     "dept": "personal-care",
-    "price": 58,
+    "price": 44,
+    "priceHigh": null,
     "img": "images/shop/p116.webp"
   }
 ];

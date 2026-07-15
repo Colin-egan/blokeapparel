@@ -15,6 +15,13 @@
   var countEl = document.getElementById('shopCount');
   var pills = document.querySelectorAll('.filter-pill');
 
+  function formatPrice(p) {
+    if (p.priceHigh && p.priceHigh > p.price) {
+      return '$' + p.price + '&ndash;$' + Math.round(p.priceHigh);
+    }
+    return '$' + p.price;
+  }
+
   function cardHtml(p) {
     return (
       '<li class="shop-card" data-dept="' + p.dept + '">' +
@@ -23,7 +30,7 @@
           '<p class="stock-tag-no">' + DEPT_LABELS[p.dept] + '</p>' +
           '<h3>' + p.name + '</h3>' +
           '<div class="shop-card-row">' +
-            '<span class="shop-price">$' + p.price + '</span>' +
+            '<span class="shop-price">' + formatPrice(p) + '</span>' +
             '<button type="button" class="btn btn-primary btn-small" data-add="' + p.id + '">Add to cart</button>' +
           '</div>' +
         '</div>' +
