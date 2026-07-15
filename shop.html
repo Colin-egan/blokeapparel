@@ -8,6 +8,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&family=Archivo:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -35,6 +38,9 @@
 
     <div class="header-actions">
       <a href="index.html#giftcard" class="tag-link">Gift Card</a>
+      <button type="button" class="icon-btn search-btn" data-search-open aria-label="Search products">
+        <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+      </button>
       <button type="button" class="icon-btn cart-btn" data-cart-open aria-label="Open cart">
         <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
         <span class="cart-badge" data-cart-count>0</span>
@@ -56,6 +62,10 @@
   </section>
 
   <div class="wrap">
+    <label class="search-field" for="shopSearch">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+      <input type="search" id="shopSearch" placeholder="Search products&hellip;" autocomplete="off">
+    </label>
     <div class="filter-bar" role="tablist" aria-label="Filter by department" id="filterBar">
       <button type="button" class="filter-pill is-active" data-filter="all">All</button>
       <button type="button" class="filter-pill" data-filter="shirts">Shirts</button>
@@ -121,12 +131,14 @@
 
   <div class="wrap footer-bottom">
     <p>&copy; <span id="year"></span> Bloke Apparel &amp; Supply.</p>
+    <img src="images/kiwi-paper.png" alt="" class="mascot mascot-tiny footer-kiwi">
   </div>
 </footer>
 
 <script src="js/products.js"></script>
 <script src="js/cart.js"></script>
 <script src="js/shop.js"></script>
+<script src="js/search.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

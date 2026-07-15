@@ -123,7 +123,11 @@
     var foot = document.getElementById('cartDrawerFoot');
 
     if (entries.length === 0) {
-      body.innerHTML = '<p class="cart-empty">Your bag is empty. Go tag something.</p>';
+      body.innerHTML =
+        '<div class="cart-empty">' +
+          '<img src="images/kiwi-ink.png" alt="" class="mascot mascot-md">' +
+          '<p>Your bag is empty. Gone to find stock.</p>' +
+        '</div>';
       foot.innerHTML = '';
       return;
     }

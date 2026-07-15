@@ -372,6 +372,23 @@ p:last-child { margin-bottom: 0; }
   margin: 0 0 4px;
 }
 
+/* ---------------------------------------------------
+   Kiwi mascot — cut from the wordmark, used at the
+   small in-between moments (empty states, confirmation,
+   the footer signature)
+--------------------------------------------------- */
+.mascot {
+  display: block;
+  margin: 0 auto;
+  opacity: 0.9;
+  user-select: none;
+}
+.mascot-tiny { height: 18px; width: auto; }
+.mascot-sm { height: 32px; width: auto; margin-bottom: 12px; }
+.mascot-md { height: 44px; width: auto; margin-bottom: 14px; }
+.mascot-lg { height: 64px; width: auto; margin-bottom: 18px; }
+.mascot-flip { transform: scaleX(-1); }
+
 .tag-grid h3 {
   font-size: 22px;
 }
@@ -633,10 +650,15 @@ p:last-child { margin-bottom: 0; }
 .footer-bottom {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 22px 28px;
   font-size: 12.5px;
   color: rgba(237,228,210,0.55);
   font-family: var(--font-mono);
+}
+.footer-kiwi {
+  opacity: 0.5;
+  margin: 0;
 }
 @media (max-width: 480px) {
   .footer-bottom { flex-direction: column; gap: 6px; }
@@ -701,7 +723,7 @@ p:last-child { margin-bottom: 0; }
 /* ---------------------------------------------------
    Cart button + badge
 --------------------------------------------------- */
-.cart-btn {
+.search-btn, .cart-btn {
   position: relative;
   display: flex !important;
   color: var(--ink);
@@ -783,10 +805,15 @@ p:last-child { margin-bottom: 0; }
   padding: 20px 24px;
 }
 .cart-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   color: var(--ink-soft);
   font-size: 14px;
-  margin-top: 20px;
+  margin-top: 36px;
 }
+.cart-empty p { margin: 0; }
 
 .cart-line {
   display: grid;
@@ -862,6 +889,164 @@ p:last-child { margin-bottom: 0; }
   display: flex;
   width: 100%;
   justify-content: center;
+}
+
+/* ---------------------------------------------------
+   Search field (shop page inline + overlay panel)
+--------------------------------------------------- */
+.search-field {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1.5px solid var(--line);
+  border-radius: 999px;
+  background: var(--paper);
+  padding: 11px 18px;
+  margin-top: 26px;
+  max-width: 420px;
+  color: var(--ink-soft);
+  transition: border-color 0.18s ease;
+}
+.search-field:focus-within { border-color: var(--denim); color: var(--ink); }
+.search-field svg { flex-shrink: 0; }
+.search-field input {
+  border: none;
+  background: none;
+  outline: none;
+  width: 100%;
+  font-family: var(--font-body);
+  font-size: 14.5px;
+  color: var(--ink);
+}
+.search-field input::placeholder { color: var(--ink-soft); }
+
+.search-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(33, 28, 21, 0.5);
+  z-index: 90;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+.search-overlay.is-open { opacity: 1; pointer-events: auto; }
+
+.search-panel {
+  position: fixed;
+  top: 90px;
+  left: 50%;
+  width: min(560px, calc(100% - 32px));
+  transform: translate(-50%, -14px);
+  background: var(--paper);
+  border-radius: 10px;
+  box-shadow: 0 20px 48px rgba(33, 28, 21, 0.28);
+  z-index: 91;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  max-height: min(70vh, 560px);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.search-panel.is-open { opacity: 1; pointer-events: auto; transform: translate(-50%, 0); }
+
+.search-panel-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 8px 8px 20px;
+  border-bottom: 1px solid var(--line);
+}
+.search-panel-head svg { flex-shrink: 0; color: var(--ink-soft); }
+.search-panel-head input {
+  flex: 1;
+  border: none;
+  background: none;
+  outline: none;
+  font-family: var(--font-body);
+  font-size: 17px;
+  padding: 12px 0;
+  color: var(--ink);
+}
+.search-panel-close {
+  background: none;
+  border: none;
+  font-size: 24px;
+  line-height: 1;
+  color: var(--ink-soft);
+  cursor: pointer;
+  padding: 6px 10px;
+}
+
+.search-results {
+  list-style: none;
+  margin: 0;
+  padding: 8px;
+  overflow-y: auto;
+}
+.search-result {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  text-align: left;
+  padding: 10px;
+  border: none;
+  background: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: var(--font-body);
+  color: var(--ink);
+}
+.search-result:hover, .search-result:focus-visible { background: var(--canvas); }
+.search-result img {
+  width: 46px;
+  height: 46px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid var(--line);
+  flex-shrink: 0;
+}
+.search-result-info { flex: 1; min-width: 0; }
+.search-result-name {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0 0 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.search-result-meta {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  color: var(--ink-soft);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.search-result-price {
+  font-family: var(--font-mono);
+  font-size: 13.5px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.search-empty, .search-hint {
+  padding: 26px 20px;
+  color: var(--ink-soft);
+  font-size: 14px;
+  text-align: center;
+}
+.search-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.search-empty .mascot { margin-bottom: 10px; }
+
+.shop-card.is-highlighted {
+  outline: 2.5px solid var(--brass);
+  outline-offset: 2px;
 }
 
 /* ---------------------------------------------------
@@ -1129,9 +1314,20 @@ p:last-child { margin-bottom: 0; }
 }
 .confirmation-tag {
   display: inline-block;
+  position: relative;
   width: 200px;
   margin: 0 auto 30px;
   transform: rotate(-3deg);
+  overflow: visible;
+}
+.confirmation-stamp {
+  position: absolute;
+  top: -16px;
+  right: -18px;
+  height: 46px;
+  width: auto;
+  transform: rotate(14deg);
+  filter: drop-shadow(2px 3px 0 rgba(33,28,21,0.12));
 }
 .checkout-confirmation h1 { font-size: 34px; margin: 6px 0 14px; }
 .checkout-confirmation p { color: var(--ink-soft); margin-bottom: 26px; }
