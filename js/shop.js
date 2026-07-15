@@ -97,6 +97,81 @@
     applyFilter(currentDept);
   }
 
+  // Product modal (image gallery)
+  var overlay = document.getElementById('productOverlay');
+  var modal = document.getElementById('productModal');
+  var modalImage = document.getElementById('productModalImage');
+  var modalThumbs = document.getElementById('productModalThumbs');
+  var modalPrev = document.getElementById('productModalPrev');
+  var modalNext = document.getElementById('productModalNext');
+  var modalDept = document.getElementById('productModalDept');
+  var modalTitle = document.getElementById('productModalTitle');
+  var modalPrice = document.getElementById('productModalPrice');
+  var modalAdd = document.getElementById('productModalAdd');
+  var modalClose = document.getElementById('productModalClose');
+  var modalImages = [];
+  var modalIndex = 0;
+
+  function setModalImage(i) {
+    modalIndex = (i + modalImages.length) % modalImages.length;
+    modalImage.src = modalImages[modalIndex];
+    var thumbs = modalThumbs.querySelectorAll('button');
+    thumbs.forEach(function (t, idx) {
+      t.classList.toggle('is-active', idx === modalIndex);
+    });
+  }
+
+  function openProductModal(product) {
+    modalImages = [product.img].concat(product.gallery || []);
+    modalDept.textContent = DEPT_LABELS[product.dept] || product.dept;
+    modalTitle.textContent = product.name;
+    modalPrice.textContent = formatPrice(product);
+    modalAdd.setAttribute('data-add', product.id);
+
+    var hasMultiple = modalImages.length > 1;
+    modalPrev.hidden = !hasMultiple;
+    modalNext.hidden = !hasMultiple;
+
+    modalThumbs.innerHTML = hasMultiple
+      ? modalImages.map(function (src, idx) {
+          return '<button type="button" data-idx="' + idx + '"><img src="' + src + '" alt=""></button>';
+        }).join('')
+      : '';
+    modalThumbs.querySelectorAll('button').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        setModalImage(parseInt(btn.getAttribute('data-idx'), 10));
+      });
+    });
+
+    setModalImage(0);
+    overlay.classList.add('is-open');
+    modal.classList.add('is-open');
+  }
+
+  function closeProductModal() {
+    overlay.classList.remove('is-open');
+    modal.classList.remove('is-open');
+  }
+
+  modalPrev.addEventListener('click', function () { setModalImage(modalIndex - 1); });
+  modalNext.addEventListener('click', function () { setModalImage(modalIndex + 1); });
+  modalClose.addEventListener('click', closeProductModal);
+  overlay.addEventListener('click', closeProductModal);
+  document.addEventListener('keydown', function (e) {
+    if (!modal.classList.contains('is-open')) return;
+    if (e.key === 'Escape') closeProductModal();
+    if (e.key === 'ArrowLeft') setModalImage(modalIndex - 1);
+    if (e.key === 'ArrowRight') setModalImage(modalIndex + 1);
+  });
+
+  grid.addEventListener('click', function (e) {
+    var photo = e.target.closest('.shop-card-photo');
+    if (!photo) return;
+    var card = photo.closest('.shop-card');
+    var product = PRODUCTS.find(function (p) { return p.id === card.dataset.id; });
+    if (product) openProductModal(product);
+  });
+
   pills.forEach(function (pill) {
     pill.addEventListener('click', function () {
       var dept = pill.dataset.filter;

@@ -5,7 +5,8 @@ const PRODUCTS = [
     "dept": "denim",
     "price": 228,
     "priceHigh": null,
-    "img": "images/shop/p000.webp"
+    "img": "images/shop/p000.webp",
+    "gallery": []
   },
   {
     "id": "p001",
@@ -13,7 +14,12 @@ const PRODUCTS = [
     "dept": "tees",
     "price": 39,
     "priceHigh": null,
-    "img": "images/shop/p001.webp"
+    "img": "images/shop/p001.webp",
+    "gallery": [
+      "images/shop-gallery/p001-2.webp",
+      "images/shop-gallery/p001-3.webp",
+      "images/shop-gallery/p001-4.webp"
+    ]
   },
   {
     "id": "p002",
@@ -21,7 +27,10 @@ const PRODUCTS = [
     "dept": "tees",
     "price": 55,
     "priceHigh": null,
-    "img": "images/shop/p002.webp"
+    "img": "images/shop/p002.webp",
+    "gallery": [
+      "images/shop-gallery/p002-2.webp"
+    ]
   },
   {
     "id": "p003",
@@ -29,7 +38,11 @@ const PRODUCTS = [
     "dept": "shirts",
     "price": 99,
     "priceHigh": null,
-    "img": "images/shop/p003.webp"
+    "img": "images/shop/p003.webp",
+    "gallery": [
+      "images/shop-gallery/p003-2.webp",
+      "images/shop-gallery/p003-3.webp"
+    ]
   },
   {
     "id": "p004",
@@ -37,7 +50,14 @@ const PRODUCTS = [
     "dept": "denim",
     "price": 218,
     "priceHigh": null,
-    "img": "images/shop/p004.webp"
+    "img": "images/shop/p004.webp",
+    "gallery": [
+      "images/shop-gallery/p004-2.webp",
+      "images/shop-gallery/p004-3.webp",
+      "images/shop-gallery/p004-4.webp",
+      "images/shop-gallery/p004-5.webp",
+      "images/shop-gallery/p004-6.webp"
+    ]
   },
   {
     "id": "p005",
@@ -45,7 +65,12 @@ const PRODUCTS = [
     "dept": "knitwear",
     "price": 98,
     "priceHigh": null,
-    "img": "images/shop/p005.webp"
+    "img": "images/shop/p005.webp",
+    "gallery": [
+      "images/shop-gallery/p005-2.webp",
+      "images/shop-gallery/p005-3.webp",
+      "images/shop-gallery/p005-4.webp"
+    ]
   },
   {
     "id": "p006",
@@ -53,7 +78,8 @@ const PRODUCTS = [
     "dept": "personal-care",
     "price": 20,
     "priceHigh": null,
-    "img": "images/shop/p006.webp"
+    "img": "images/shop/p006.webp",
+    "gallery": []
   },
   {
     "id": "p007",
@@ -61,7 +87,11 @@ const PRODUCTS = [
     "dept": "personal-care",
     "price": 44,
     "priceHigh": null,
-    "img": "images/shop/p007.webp"
+    "img": "images/shop/p007.webp",
+    "gallery": [
+      "images/shop-gallery/p007-2.webp",
+      "images/shop-gallery/p007-3.webp"
+    ]
   },
   {
     "id": "p008",
@@ -69,7 +99,13 @@ const PRODUCTS = [
     "dept": "shorts",
     "price": 89,
     "priceHigh": null,
-    "img": "images/shop/p008.webp"
+    "img": "images/shop/p008.webp",
+    "gallery": [
+      "images/shop-gallery/p008-2.webp",
+      "images/shop-gallery/p008-3.webp",
+      "images/shop-gallery/p008-4.webp",
+      "images/shop-gallery/p008-5.webp"
+    ]
   },
   {
     "id": "p009",
@@ -77,7 +113,8 @@ const PRODUCTS = [
     "dept": "personal-care",
     "price": 22,
     "priceHigh": null,
-    "img": "images/shop/p009.webp"
+    "img": "images/shop/p009.webp",
+    "gallery": []
   },
   {
     "id": "p010",
@@ -85,7 +122,8 @@ const PRODUCTS = [
     "dept": "personal-care",
     "price": 22,
     "priceHigh": null,
-    "img": "images/shop/p010.webp"
+    "img": "images/shop/p010.webp",
+    "gallery": []
   },
   {
     "id": "p011",
@@ -93,7 +131,11 @@ const PRODUCTS = [
     "dept": "personal-care",
     "price": 15,
     "priceHigh": null,
-    "img": "images/shop/p011.webp"
+    "img": "images/shop/p011.webp",
+    "gallery": [
+      "images/shop-gallery/p011-2.webp",
+      "images/shop-gallery/p011-3.webp"
+    ]
   },
   {
     "id": "p012",
@@ -101,7 +143,11 @@ const PRODUCTS = [
     "dept": "shoes",
     "price": 160,
     "priceHigh": null,
-    "img": "images/shop/p012.webp"
+    "img": "images/shop/p012.webp",
+    "gallery": [
+      "images/shop-gallery/p012-2.webp",
+      "images/shop-gallery/p012-3.webp"
+    ]
   },
   {
     "id": "p013",
@@ -109,7 +155,11 @@ const PRODUCTS = [
     "dept": "personal-care",
     "price": 15,
     "priceHigh": null,
-    "img": "images/shop/p013.webp"
+    "img": "images/shop/p013.webp",
+    "gallery": [
+      "images/shop-gallery/p013-2.webp",
+      "images/shop-gallery/p013-3.webp"
+    ]
   },
   {
     "id": "p014",
@@ -117,7 +167,11 @@ const PRODUCTS = [
     "dept": "accessories",
     "price": 45,
     "priceHigh": null,
-    "img": "images/shop/p014.webp"
+    "img": "images/shop/p014.webp",
+    "gallery": [
+      "images/shop-gallery/p014-2.webp",
+      "images/shop-gallery/p014-3.webp"
+    ]
   },
   {
     "id": "p015",
@@ -125,7 +179,8 @@ const PRODUCTS = [
     "dept": "personal-care",
     "price": 9,
     "priceHigh": null,
-    "img": "images/shop/p015.webp"
+    "img": "images/shop/p015.webp",
+    "gallery": []
   },
   {
     "id": "p016",
@@ -133,15 +188,21 @@ const PRODUCTS = [
     "dept": "accessories",
     "price": 40,
     "priceHigh": null,
-    "img": "images/shop/p016.webp"
+    "img": "images/shop/p016.webp",
+    "gallery": [
+      "images/shop-gallery/p016-2.webp"
+    ]
   },
   {
     "id": "p017",
     "name": "Holbrook / Black",
     "dept": "shorts",
     "price": 62,
-    "priceHigh": 78.0,
-    "img": "images/shop/p017.webp"
+    "priceHigh": 78,
+    "img": "images/shop/p017.webp",
+    "gallery": [
+      "images/shop-gallery/p017-2.webp"
+    ]
   },
   {
     "id": "p018",
@@ -149,7 +210,11 @@ const PRODUCTS = [
     "dept": "accessories",
     "price": 45,
     "priceHigh": null,
-    "img": "images/shop/p018.webp"
+    "img": "images/shop/p018.webp",
+    "gallery": [
+      "images/shop-gallery/p018-2.webp",
+      "images/shop-gallery/p018-3.webp"
+    ]
   },
   {
     "id": "p019",
@@ -157,7 +222,10 @@ const PRODUCTS = [
     "dept": "tees",
     "price": 55,
     "priceHigh": null,
-    "img": "images/shop/p019.webp"
+    "img": "images/shop/p019.webp",
+    "gallery": [
+      "images/shop-gallery/p019-2.webp"
+    ]
   },
   {
     "id": "p020",
@@ -165,7 +233,12 @@ const PRODUCTS = [
     "dept": "denim",
     "price": 198,
     "priceHigh": null,
-    "img": "images/shop/p020.webp"
+    "img": "images/shop/p020.webp",
+    "gallery": [
+      "images/shop-gallery/p020-2.webp",
+      "images/shop-gallery/p020-3.webp",
+      "images/shop-gallery/p020-4.webp"
+    ]
   },
   {
     "id": "p021",
@@ -173,15 +246,19 @@ const PRODUCTS = [
     "dept": "accessories",
     "price": 45,
     "priceHigh": null,
-    "img": "images/shop/p021.webp"
+    "img": "images/shop/p021.webp",
+    "gallery": [
+      "images/shop-gallery/p021-2.webp"
+    ]
   },
   {
     "id": "p022",
-    "name": "Hall\u00f3 S\u00e1pa / Icelandic Ash Soap",
+    "name": "Halló Sápa / Icelandic Ash Soap",
     "dept": "personal-care",
     "price": 9,
     "priceHigh": null,
-    "img": "images/shop/p022.webp"
+    "img": "images/shop/p022.webp",
+    "gallery": []
   },
   {
     "id": "p023",
@@ -189,7 +266,11 @@ const PRODUCTS = [
     "dept": "shorts",
     "price": 99,
     "priceHigh": null,
-    "img": "images/shop/p023.webp"
+    "img": "images/shop/p023.webp",
+    "gallery": [
+      "images/shop-gallery/p023-2.webp",
+      "images/shop-gallery/p023-3.webp"
+    ]
   },
   {
     "id": "p024",
@@ -197,7 +278,8 @@ const PRODUCTS = [
     "dept": "accessories",
     "price": 40,
     "priceHigh": null,
-    "img": "images/shop/p024.webp"
+    "img": "images/shop/p024.webp",
+    "gallery": []
   },
   {
     "id": "p025",
@@ -205,7 +287,10 @@ const PRODUCTS = [
     "dept": "accessories",
     "price": 45,
     "priceHigh": null,
-    "img": "images/shop/p025.webp"
+    "img": "images/shop/p025.webp",
+    "gallery": [
+      "images/shop-gallery/p025-2.webp"
+    ]
   },
   {
     "id": "p026",
@@ -213,7 +298,12 @@ const PRODUCTS = [
     "dept": "travel",
     "price": 150,
     "priceHigh": null,
-    "img": "images/shop/p026.webp"
+    "img": "images/shop/p026.webp",
+    "gallery": [
+      "images/shop-gallery/p026-2.webp",
+      "images/shop-gallery/p026-3.webp",
+      "images/shop-gallery/p026-4.webp"
+    ]
   },
   {
     "id": "p027",
@@ -221,7 +311,10 @@ const PRODUCTS = [
     "dept": "personal-care",
     "price": 4,
     "priceHigh": null,
-    "img": "images/shop/p027.webp"
+    "img": "images/shop/p027.webp",
+    "gallery": [
+      "images/shop-gallery/p027-2.webp"
+    ]
   },
   {
     "id": "p028",
@@ -229,7 +322,11 @@ const PRODUCTS = [
     "dept": "personal-care",
     "price": 15,
     "priceHigh": null,
-    "img": "images/shop/p028.webp"
+    "img": "images/shop/p028.webp",
+    "gallery": [
+      "images/shop-gallery/p028-2.webp",
+      "images/shop-gallery/p028-3.webp"
+    ]
   },
   {
     "id": "p029",
@@ -237,7 +334,8 @@ const PRODUCTS = [
     "dept": "shorts",
     "price": 74,
     "priceHigh": null,
-    "img": "images/shop/p029.webp"
+    "img": "images/shop/p029.webp",
+    "gallery": []
   },
   {
     "id": "p030",
@@ -245,7 +343,8 @@ const PRODUCTS = [
     "dept": "denim",
     "price": 228,
     "priceHigh": null,
-    "img": "images/shop/p030.webp"
+    "img": "images/shop/p030.webp",
+    "gallery": []
   },
   {
     "id": "p031",
@@ -253,7 +352,13 @@ const PRODUCTS = [
     "dept": "denim",
     "price": 208,
     "priceHigh": null,
-    "img": "images/shop/p031.webp"
+    "img": "images/shop/p031.webp",
+    "gallery": [
+      "images/shop-gallery/p031-2.webp",
+      "images/shop-gallery/p031-3.webp",
+      "images/shop-gallery/p031-4.webp",
+      "images/shop-gallery/p031-5.webp"
+    ]
   },
   {
     "id": "p032",
@@ -261,7 +366,10 @@ const PRODUCTS = [
     "dept": "accessories",
     "price": 45,
     "priceHigh": null,
-    "img": "images/shop/p032.webp"
+    "img": "images/shop/p032.webp",
+    "gallery": [
+      "images/shop-gallery/p032-2.webp"
+    ]
   },
   {
     "id": "p033",
@@ -269,7 +377,11 @@ const PRODUCTS = [
     "dept": "shoes",
     "price": 160,
     "priceHigh": null,
-    "img": "images/shop/p033.webp"
+    "img": "images/shop/p033.webp",
+    "gallery": [
+      "images/shop-gallery/p033-2.webp",
+      "images/shop-gallery/p033-3.webp"
+    ]
   },
   {
     "id": "p034",
@@ -277,7 +389,10 @@ const PRODUCTS = [
     "dept": "accessories",
     "price": 45,
     "priceHigh": null,
-    "img": "images/shop/p034.webp"
+    "img": "images/shop/p034.webp",
+    "gallery": [
+      "images/shop-gallery/p034-2.webp"
+    ]
   },
   {
     "id": "p035",
@@ -285,7 +400,12 @@ const PRODUCTS = [
     "dept": "shoes",
     "price": 170,
     "priceHigh": null,
-    "img": "images/shop/p035.webp"
+    "img": "images/shop/p035.webp",
+    "gallery": [
+      "images/shop-gallery/p035-2.webp",
+      "images/shop-gallery/p035-3.webp",
+      "images/shop-gallery/p035-4.webp"
+    ]
   },
   {
     "id": "p036",
@@ -293,7 +413,10 @@ const PRODUCTS = [
     "dept": "knitwear",
     "price": 80,
     "priceHigh": null,
-    "img": "images/shop/p036.webp"
+    "img": "images/shop/p036.webp",
+    "gallery": [
+      "images/shop-gallery/p036-2.webp"
+    ]
   },
   {
     "id": "p037",
@@ -301,7 +424,13 @@ const PRODUCTS = [
     "dept": "shorts",
     "price": 109,
     "priceHigh": null,
-    "img": "images/shop/p037.webp"
+    "img": "images/shop/p037.webp",
+    "gallery": [
+      "images/shop-gallery/p037-2.webp",
+      "images/shop-gallery/p037-3.webp",
+      "images/shop-gallery/p037-4.webp",
+      "images/shop-gallery/p037-5.webp"
+    ]
   },
   {
     "id": "p038",
@@ -309,7 +438,8 @@ const PRODUCTS = [
     "dept": "knitwear",
     "price": 85,
     "priceHigh": null,
-    "img": "images/shop/p038.webp"
+    "img": "images/shop/p038.webp",
+    "gallery": []
   },
   {
     "id": "p039",
@@ -317,7 +447,10 @@ const PRODUCTS = [
     "dept": "accessories",
     "price": 65,
     "priceHigh": null,
-    "img": "images/shop/p039.webp"
+    "img": "images/shop/p039.webp",
+    "gallery": [
+      "images/shop-gallery/p039-2.webp"
+    ]
   },
   {
     "id": "p040",
@@ -325,7 +458,11 @@ const PRODUCTS = [
     "dept": "shirts",
     "price": 80,
     "priceHigh": null,
-    "img": "images/shop/p040.webp"
+    "img": "images/shop/p040.webp",
+    "gallery": [
+      "images/shop-gallery/p040-2.webp",
+      "images/shop-gallery/p040-3.webp"
+    ]
   },
   {
     "id": "p042",
@@ -333,7 +470,10 @@ const PRODUCTS = [
     "dept": "personal-care",
     "price": 9,
     "priceHigh": null,
-    "img": "images/shop/p042.webp"
+    "img": "images/shop/p042.webp",
+    "gallery": [
+      "images/shop-gallery/p042-2.webp"
+    ]
   },
   {
     "id": "p043",
@@ -341,15 +481,25 @@ const PRODUCTS = [
     "dept": "shoes",
     "price": 160,
     "priceHigh": null,
-    "img": "images/shop/p043.webp"
+    "img": "images/shop/p043.webp",
+    "gallery": [
+      "images/shop-gallery/p043-2.webp",
+      "images/shop-gallery/p043-3.webp",
+      "images/shop-gallery/p043-4.webp"
+    ]
   },
   {
     "id": "p044",
     "name": "CS / Linwood / Mocha",
     "dept": "shirts",
     "price": 65,
-    "priceHigh": 82.0,
-    "img": "images/shop/p044.webp"
+    "priceHigh": 82,
+    "img": "images/shop/p044.webp",
+    "gallery": [
+      "images/shop-gallery/p044-2.webp",
+      "images/shop-gallery/p044-3.webp",
+      "images/shop-gallery/p044-4.webp"
+    ]
   },
   {
     "id": "p045",
@@ -357,7 +507,12 @@ const PRODUCTS = [
     "dept": "travel",
     "price": 180,
     "priceHigh": null,
-    "img": "images/shop/p045.webp"
+    "img": "images/shop/p045.webp",
+    "gallery": [
+      "images/shop-gallery/p045-2.webp",
+      "images/shop-gallery/p045-3.webp",
+      "images/shop-gallery/p045-4.webp"
+    ]
   },
   {
     "id": "p046",
@@ -365,7 +520,8 @@ const PRODUCTS = [
     "dept": "accessories",
     "price": 50,
     "priceHigh": null,
-    "img": "images/shop/p046.webp"
+    "img": "images/shop/p046.webp",
+    "gallery": []
   },
   {
     "id": "p047",
@@ -373,7 +529,8 @@ const PRODUCTS = [
     "dept": "personal-care",
     "price": 28,
     "priceHigh": null,
-    "img": "images/shop/p047.webp"
+    "img": "images/shop/p047.webp",
+    "gallery": []
   },
   {
     "id": "p048",
@@ -381,15 +538,23 @@ const PRODUCTS = [
     "dept": "accessories",
     "price": 45,
     "priceHigh": null,
-    "img": "images/shop/p048.webp"
+    "img": "images/shop/p048.webp",
+    "gallery": [
+      "images/shop-gallery/p048-2.webp"
+    ]
   },
   {
     "id": "p049",
     "name": "CS / Chuck / Olive",
     "dept": "denim",
     "price": 78,
-    "priceHigh": 92.0,
-    "img": "images/shop/p049.webp"
+    "priceHigh": 92,
+    "img": "images/shop/p049.webp",
+    "gallery": [
+      "images/shop-gallery/p049-2.webp",
+      "images/shop-gallery/p049-3.webp",
+      "images/shop-gallery/p049-4.webp"
+    ]
   },
   {
     "id": "p050",
@@ -397,15 +562,22 @@ const PRODUCTS = [
     "dept": "personal-care",
     "price": 54,
     "priceHigh": null,
-    "img": "images/shop/p050.webp"
+    "img": "images/shop/p050.webp",
+    "gallery": []
   },
   {
     "id": "p051",
     "name": "DL1961 / Nick / Shadow",
     "dept": "denim",
     "price": 158,
-    "priceHigh": 198.0,
-    "img": "images/shop/p051.webp"
+    "priceHigh": 198,
+    "img": "images/shop/p051.webp",
+    "gallery": [
+      "images/shop-gallery/p051-2.webp",
+      "images/shop-gallery/p051-3.webp",
+      "images/shop-gallery/p051-4.webp",
+      "images/shop-gallery/p051-5.webp"
+    ]
   },
   {
     "id": "p052",
@@ -413,7 +585,10 @@ const PRODUCTS = [
     "dept": "tees",
     "price": 55,
     "priceHigh": null,
-    "img": "images/shop/p052.webp"
+    "img": "images/shop/p052.webp",
+    "gallery": [
+      "images/shop-gallery/p052-2.webp"
+    ]
   },
   {
     "id": "p053",
@@ -421,7 +596,8 @@ const PRODUCTS = [
     "dept": "personal-care",
     "price": 22,
     "priceHigh": null,
-    "img": "images/shop/p053.webp"
+    "img": "images/shop/p053.webp",
+    "gallery": []
   },
   {
     "id": "p054",
@@ -429,7 +605,11 @@ const PRODUCTS = [
     "dept": "shoes",
     "price": 160,
     "priceHigh": null,
-    "img": "images/shop/p054.webp"
+    "img": "images/shop/p054.webp",
+    "gallery": [
+      "images/shop-gallery/p054-2.webp",
+      "images/shop-gallery/p054-3.webp"
+    ]
   },
   {
     "id": "p055",
@@ -437,7 +617,12 @@ const PRODUCTS = [
     "dept": "shirts",
     "price": 100,
     "priceHigh": null,
-    "img": "images/shop/p055.webp"
+    "img": "images/shop/p055.webp",
+    "gallery": [
+      "images/shop-gallery/p055-2.webp",
+      "images/shop-gallery/p055-3.webp",
+      "images/shop-gallery/p055-4.webp"
+    ]
   },
   {
     "id": "p056",
@@ -445,7 +630,10 @@ const PRODUCTS = [
     "dept": "shirts",
     "price": 80,
     "priceHigh": null,
-    "img": "images/shop/p056.webp"
+    "img": "images/shop/p056.webp",
+    "gallery": [
+      "images/shop-gallery/p056-2.webp"
+    ]
   },
   {
     "id": "p057",
@@ -453,7 +641,10 @@ const PRODUCTS = [
     "dept": "accessories",
     "price": 45,
     "priceHigh": null,
-    "img": "images/shop/p057.webp"
+    "img": "images/shop/p057.webp",
+    "gallery": [
+      "images/shop-gallery/p057-2.webp"
+    ]
   },
   {
     "id": "p058",
@@ -461,15 +652,23 @@ const PRODUCTS = [
     "dept": "shirts",
     "price": 100,
     "priceHigh": null,
-    "img": "images/shop/p058.webp"
+    "img": "images/shop/p058.webp",
+    "gallery": [
+      "images/shop-gallery/p058-2.webp",
+      "images/shop-gallery/p058-3.webp"
+    ]
   },
   {
     "id": "p059",
     "name": "FC / Ripstop Short",
     "dept": "shorts",
     "price": 50,
-    "priceHigh": 68.0,
-    "img": "images/shop/p059.webp"
+    "priceHigh": 68,
+    "img": "images/shop/p059.webp",
+    "gallery": [
+      "images/shop-gallery/p059-2.webp",
+      "images/shop-gallery/p059-3.webp"
+    ]
   },
   {
     "id": "p060",
@@ -477,7 +676,12 @@ const PRODUCTS = [
     "dept": "travel",
     "price": 150,
     "priceHigh": null,
-    "img": "images/shop/p060.webp"
+    "img": "images/shop/p060.webp",
+    "gallery": [
+      "images/shop-gallery/p060-2.webp",
+      "images/shop-gallery/p060-3.webp",
+      "images/shop-gallery/p060-4.webp"
+    ]
   },
   {
     "id": "p061",
@@ -485,7 +689,10 @@ const PRODUCTS = [
     "dept": "shirts",
     "price": 80,
     "priceHigh": null,
-    "img": "images/shop/p061.webp"
+    "img": "images/shop/p061.webp",
+    "gallery": [
+      "images/shop-gallery/p061-2.webp"
+    ]
   },
   {
     "id": "p062",
@@ -493,15 +700,20 @@ const PRODUCTS = [
     "dept": "shoes",
     "price": 160,
     "priceHigh": null,
-    "img": "images/shop/p062.webp"
+    "img": "images/shop/p062.webp",
+    "gallery": [
+      "images/shop-gallery/p062-2.webp",
+      "images/shop-gallery/p062-3.webp"
+    ]
   },
   {
     "id": "p063",
     "name": "A.R. Denim / Brodie / Dirty",
     "dept": "denim",
     "price": 228,
-    "priceHigh": 229.0,
-    "img": "images/shop/p063.webp"
+    "priceHigh": 229,
+    "img": "images/shop/p063.webp",
+    "gallery": []
   },
   {
     "id": "p064",
@@ -509,7 +721,8 @@ const PRODUCTS = [
     "dept": "personal-care",
     "price": 26,
     "priceHigh": null,
-    "img": "images/shop/p064.webp"
+    "img": "images/shop/p064.webp",
+    "gallery": []
   },
   {
     "id": "p065",
@@ -517,7 +730,8 @@ const PRODUCTS = [
     "dept": "personal-care",
     "price": 26,
     "priceHigh": null,
-    "img": "images/shop/p065.webp"
+    "img": "images/shop/p065.webp",
+    "gallery": []
   },
   {
     "id": "p066",
@@ -525,7 +739,10 @@ const PRODUCTS = [
     "dept": "shirts",
     "price": 80,
     "priceHigh": null,
-    "img": "images/shop/p066.webp"
+    "img": "images/shop/p066.webp",
+    "gallery": [
+      "images/shop-gallery/p066-2.webp"
+    ]
   },
   {
     "id": "p067",
@@ -533,7 +750,10 @@ const PRODUCTS = [
     "dept": "shorts",
     "price": 59,
     "priceHigh": null,
-    "img": "images/shop/p067.webp"
+    "img": "images/shop/p067.webp",
+    "gallery": [
+      "images/shop-gallery/p067-2.webp"
+    ]
   },
   {
     "id": "p068",
@@ -541,7 +761,10 @@ const PRODUCTS = [
     "dept": "accessories",
     "price": 45,
     "priceHigh": null,
-    "img": "images/shop/p068.webp"
+    "img": "images/shop/p068.webp",
+    "gallery": [
+      "images/shop-gallery/p068-2.webp"
+    ]
   },
   {
     "id": "p069",
@@ -549,7 +772,10 @@ const PRODUCTS = [
     "dept": "shirts",
     "price": 80,
     "priceHigh": null,
-    "img": "images/shop/p069.webp"
+    "img": "images/shop/p069.webp",
+    "gallery": [
+      "images/shop-gallery/p069-2.webp"
+    ]
   },
   {
     "id": "p070",
@@ -557,7 +783,20 @@ const PRODUCTS = [
     "dept": "travel",
     "price": 60,
     "priceHigh": null,
-    "img": "images/shop/p070.webp"
+    "img": "images/shop/p070.webp",
+    "gallery": [
+      "images/shop-gallery/p070-2.webp",
+      "images/shop-gallery/p070-3.webp",
+      "images/shop-gallery/p070-4.webp",
+      "images/shop-gallery/p070-5.webp",
+      "images/shop-gallery/p070-6.webp",
+      "images/shop-gallery/p070-7.webp",
+      "images/shop-gallery/p070-8.webp",
+      "images/shop-gallery/p070-9.webp",
+      "images/shop-gallery/p070-10.webp",
+      "images/shop-gallery/p070-11.webp",
+      "images/shop-gallery/p070-12.webp"
+    ]
   },
   {
     "id": "p071",
@@ -565,7 +804,10 @@ const PRODUCTS = [
     "dept": "shirts",
     "price": 169,
     "priceHigh": null,
-    "img": "images/shop/p071.webp"
+    "img": "images/shop/p071.webp",
+    "gallery": [
+      "images/shop-gallery/p071-2.webp"
+    ]
   },
   {
     "id": "p072",
@@ -573,7 +815,8 @@ const PRODUCTS = [
     "dept": "personal-care",
     "price": 26,
     "priceHigh": null,
-    "img": "images/shop/p072.webp"
+    "img": "images/shop/p072.webp",
+    "gallery": []
   },
   {
     "id": "p073",
@@ -581,7 +824,10 @@ const PRODUCTS = [
     "dept": "personal-care",
     "price": 9,
     "priceHigh": null,
-    "img": "images/shop/p073.webp"
+    "img": "images/shop/p073.webp",
+    "gallery": [
+      "images/shop-gallery/p073-2.webp"
+    ]
   },
   {
     "id": "p074",
@@ -589,7 +835,10 @@ const PRODUCTS = [
     "dept": "accessories",
     "price": 30,
     "priceHigh": null,
-    "img": "images/shop/p074.webp"
+    "img": "images/shop/p074.webp",
+    "gallery": [
+      "images/shop-gallery/p074-2.webp"
+    ]
   },
   {
     "id": "p075",
@@ -597,7 +846,8 @@ const PRODUCTS = [
     "dept": "personal-care",
     "price": 18,
     "priceHigh": null,
-    "img": "images/shop/p075.webp"
+    "img": "images/shop/p075.webp",
+    "gallery": []
   },
   {
     "id": "p076",
@@ -605,7 +855,10 @@ const PRODUCTS = [
     "dept": "tees",
     "price": 49,
     "priceHigh": null,
-    "img": "images/shop/p076.webp"
+    "img": "images/shop/p076.webp",
+    "gallery": [
+      "images/shop-gallery/p076-2.webp"
+    ]
   },
   {
     "id": "p077",
@@ -613,7 +866,12 @@ const PRODUCTS = [
     "dept": "shoes",
     "price": 170,
     "priceHigh": null,
-    "img": "images/shop/p077.webp"
+    "img": "images/shop/p077.webp",
+    "gallery": [
+      "images/shop-gallery/p077-2.webp",
+      "images/shop-gallery/p077-3.webp",
+      "images/shop-gallery/p077-4.webp"
+    ]
   },
   {
     "id": "p078",
@@ -621,7 +879,11 @@ const PRODUCTS = [
     "dept": "shirts",
     "price": 89,
     "priceHigh": null,
-    "img": "images/shop/p078.webp"
+    "img": "images/shop/p078.webp",
+    "gallery": [
+      "images/shop-gallery/p078-2.webp",
+      "images/shop-gallery/p078-3.webp"
+    ]
   },
   {
     "id": "p079",
@@ -629,7 +891,8 @@ const PRODUCTS = [
     "dept": "personal-care",
     "price": 9,
     "priceHigh": null,
-    "img": "images/shop/p079.webp"
+    "img": "images/shop/p079.webp",
+    "gallery": []
   },
   {
     "id": "p080",
@@ -637,7 +900,12 @@ const PRODUCTS = [
     "dept": "shoes",
     "price": 185,
     "priceHigh": null,
-    "img": "images/shop/p080.webp"
+    "img": "images/shop/p080.webp",
+    "gallery": [
+      "images/shop-gallery/p080-2.webp",
+      "images/shop-gallery/p080-3.webp",
+      "images/shop-gallery/p080-4.webp"
+    ]
   },
   {
     "id": "p081",
@@ -645,7 +913,13 @@ const PRODUCTS = [
     "dept": "accessories",
     "price": 45,
     "priceHigh": null,
-    "img": "images/shop/p081.webp"
+    "img": "images/shop/p081.webp",
+    "gallery": [
+      "images/shop-gallery/p081-2.webp",
+      "images/shop-gallery/p081-3.webp",
+      "images/shop-gallery/p081-4.webp",
+      "images/shop-gallery/p081-5.webp"
+    ]
   },
   {
     "id": "p082",
@@ -653,7 +927,10 @@ const PRODUCTS = [
     "dept": "accessories",
     "price": 45,
     "priceHigh": null,
-    "img": "images/shop/p082.webp"
+    "img": "images/shop/p082.webp",
+    "gallery": [
+      "images/shop-gallery/p082-2.webp"
+    ]
   },
   {
     "id": "p083",
@@ -661,15 +938,34 @@ const PRODUCTS = [
     "dept": "travel",
     "price": 75,
     "priceHigh": null,
-    "img": "images/shop/p083.webp"
+    "img": "images/shop/p083.webp",
+    "gallery": [
+      "images/shop-gallery/p083-2.webp",
+      "images/shop-gallery/p083-3.webp",
+      "images/shop-gallery/p083-4.webp",
+      "images/shop-gallery/p083-5.webp",
+      "images/shop-gallery/p083-6.webp",
+      "images/shop-gallery/p083-7.webp",
+      "images/shop-gallery/p083-8.webp",
+      "images/shop-gallery/p083-9.webp",
+      "images/shop-gallery/p083-10.webp",
+      "images/shop-gallery/p083-11.webp",
+      "images/shop-gallery/p083-12.webp",
+      "images/shop-gallery/p083-13.webp",
+      "images/shop-gallery/p083-14.webp"
+    ]
   },
   {
     "id": "p084",
     "name": "CS / Linwood / Gray",
     "dept": "shirts",
     "price": 69,
-    "priceHigh": 88.0,
-    "img": "images/shop/p084.webp"
+    "priceHigh": 88,
+    "img": "images/shop/p084.webp",
+    "gallery": [
+      "images/shop-gallery/p084-2.webp",
+      "images/shop-gallery/p084-3.webp"
+    ]
   },
   {
     "id": "p085",
@@ -677,7 +973,12 @@ const PRODUCTS = [
     "dept": "shoes",
     "price": 175,
     "priceHigh": null,
-    "img": "images/shop/p085.webp"
+    "img": "images/shop/p085.webp",
+    "gallery": [
+      "images/shop-gallery/p085-2.webp",
+      "images/shop-gallery/p085-3.webp",
+      "images/shop-gallery/p085-4.webp"
+    ]
   },
   {
     "id": "p086",
@@ -685,7 +986,8 @@ const PRODUCTS = [
     "dept": "personal-care",
     "price": 18,
     "priceHigh": null,
-    "img": "images/shop/p086.webp"
+    "img": "images/shop/p086.webp",
+    "gallery": []
   },
   {
     "id": "p087",
@@ -693,7 +995,11 @@ const PRODUCTS = [
     "dept": "shoes",
     "price": 160,
     "priceHigh": null,
-    "img": "images/shop/p087.webp"
+    "img": "images/shop/p087.webp",
+    "gallery": [
+      "images/shop-gallery/p087-2.webp",
+      "images/shop-gallery/p087-3.webp"
+    ]
   },
   {
     "id": "p088",
@@ -701,7 +1007,10 @@ const PRODUCTS = [
     "dept": "knitwear",
     "price": 64,
     "priceHigh": null,
-    "img": "images/shop/p088.webp"
+    "img": "images/shop/p088.webp",
+    "gallery": [
+      "images/shop-gallery/p088-2.webp"
+    ]
   },
   {
     "id": "p089",
@@ -709,7 +1018,8 @@ const PRODUCTS = [
     "dept": "denim",
     "price": 228,
     "priceHigh": null,
-    "img": "images/shop/p089.webp"
+    "img": "images/shop/p089.webp",
+    "gallery": []
   },
   {
     "id": "p090",
@@ -717,7 +1027,10 @@ const PRODUCTS = [
     "dept": "shorts",
     "price": 99,
     "priceHigh": null,
-    "img": "images/shop/p090.webp"
+    "img": "images/shop/p090.webp",
+    "gallery": [
+      "images/shop-gallery/p090-2.webp"
+    ]
   },
   {
     "id": "p091",
@@ -725,7 +1038,11 @@ const PRODUCTS = [
     "dept": "shoes",
     "price": 160,
     "priceHigh": null,
-    "img": "images/shop/p091.webp"
+    "img": "images/shop/p091.webp",
+    "gallery": [
+      "images/shop-gallery/p091-2.webp",
+      "images/shop-gallery/p091-3.webp"
+    ]
   },
   {
     "id": "p092",
@@ -733,7 +1050,11 @@ const PRODUCTS = [
     "dept": "accessories",
     "price": 39,
     "priceHigh": null,
-    "img": "images/shop/p092.webp"
+    "img": "images/shop/p092.webp",
+    "gallery": [
+      "images/shop-gallery/p092-2.webp",
+      "images/shop-gallery/p092-3.webp"
+    ]
   },
   {
     "id": "p093",
@@ -741,7 +1062,8 @@ const PRODUCTS = [
     "dept": "personal-care",
     "price": 9,
     "priceHigh": null,
-    "img": "images/shop/p093.webp"
+    "img": "images/shop/p093.webp",
+    "gallery": []
   },
   {
     "id": "p094",
@@ -749,7 +1071,12 @@ const PRODUCTS = [
     "dept": "shirts",
     "price": 100,
     "priceHigh": null,
-    "img": "images/shop/p094.webp"
+    "img": "images/shop/p094.webp",
+    "gallery": [
+      "images/shop-gallery/p094-2.webp",
+      "images/shop-gallery/p094-3.webp",
+      "images/shop-gallery/p094-4.webp"
+    ]
   },
   {
     "id": "p095",
@@ -757,7 +1084,12 @@ const PRODUCTS = [
     "dept": "travel",
     "price": 180,
     "priceHigh": null,
-    "img": "images/shop/p095.webp"
+    "img": "images/shop/p095.webp",
+    "gallery": [
+      "images/shop-gallery/p095-2.webp",
+      "images/shop-gallery/p095-3.webp",
+      "images/shop-gallery/p095-4.webp"
+    ]
   },
   {
     "id": "p096",
@@ -765,7 +1097,10 @@ const PRODUCTS = [
     "dept": "shoes",
     "price": 170,
     "priceHigh": null,
-    "img": "images/shop/p096.webp"
+    "img": "images/shop/p096.webp",
+    "gallery": [
+      "images/shop-gallery/p096-2.webp"
+    ]
   },
   {
     "id": "p097",
@@ -773,7 +1108,8 @@ const PRODUCTS = [
     "dept": "accessories",
     "price": 45,
     "priceHigh": null,
-    "img": "images/shop/p097.webp"
+    "img": "images/shop/p097.webp",
+    "gallery": []
   },
   {
     "id": "p098",
@@ -781,7 +1117,11 @@ const PRODUCTS = [
     "dept": "personal-care",
     "price": 44,
     "priceHigh": null,
-    "img": "images/shop/p098.webp"
+    "img": "images/shop/p098.webp",
+    "gallery": [
+      "images/shop-gallery/p098-2.webp",
+      "images/shop-gallery/p098-3.webp"
+    ]
   },
   {
     "id": "p099",
@@ -789,7 +1129,11 @@ const PRODUCTS = [
     "dept": "knitwear",
     "price": 179,
     "priceHigh": null,
-    "img": "images/shop/p099.webp"
+    "img": "images/shop/p099.webp",
+    "gallery": [
+      "images/shop-gallery/p099-2.webp",
+      "images/shop-gallery/p099-3.webp"
+    ]
   },
   {
     "id": "p100",
@@ -797,7 +1141,10 @@ const PRODUCTS = [
     "dept": "accessories",
     "price": 65,
     "priceHigh": null,
-    "img": "images/shop/p100.webp"
+    "img": "images/shop/p100.webp",
+    "gallery": [
+      "images/shop-gallery/p100-2.webp"
+    ]
   },
   {
     "id": "p101",
@@ -805,7 +1152,11 @@ const PRODUCTS = [
     "dept": "shirts",
     "price": 139,
     "priceHigh": null,
-    "img": "images/shop/p101.webp"
+    "img": "images/shop/p101.webp",
+    "gallery": [
+      "images/shop-gallery/p101-2.webp",
+      "images/shop-gallery/p101-3.webp"
+    ]
   },
   {
     "id": "p102",
@@ -813,7 +1164,10 @@ const PRODUCTS = [
     "dept": "accessories",
     "price": 45,
     "priceHigh": null,
-    "img": "images/shop/p102.webp"
+    "img": "images/shop/p102.webp",
+    "gallery": [
+      "images/shop-gallery/p102-2.webp"
+    ]
   },
   {
     "id": "p103",
@@ -821,7 +1175,10 @@ const PRODUCTS = [
     "dept": "tees",
     "price": 55,
     "priceHigh": null,
-    "img": "images/shop/p103.webp"
+    "img": "images/shop/p103.webp",
+    "gallery": [
+      "images/shop-gallery/p103-2.webp"
+    ]
   },
   {
     "id": "p104",
@@ -829,7 +1186,10 @@ const PRODUCTS = [
     "dept": "knitwear",
     "price": 80,
     "priceHigh": null,
-    "img": "images/shop/p104.webp"
+    "img": "images/shop/p104.webp",
+    "gallery": [
+      "images/shop-gallery/p104-2.webp"
+    ]
   },
   {
     "id": "p105",
@@ -837,7 +1197,10 @@ const PRODUCTS = [
     "dept": "accessories",
     "price": 45,
     "priceHigh": null,
-    "img": "images/shop/p105.webp"
+    "img": "images/shop/p105.webp",
+    "gallery": [
+      "images/shop-gallery/p105-2.webp"
+    ]
   },
   {
     "id": "p106",
@@ -845,7 +1208,11 @@ const PRODUCTS = [
     "dept": "personal-care",
     "price": 15,
     "priceHigh": null,
-    "img": "images/shop/p106.webp"
+    "img": "images/shop/p106.webp",
+    "gallery": [
+      "images/shop-gallery/p106-2.webp",
+      "images/shop-gallery/p106-3.webp"
+    ]
   },
   {
     "id": "p107",
@@ -853,7 +1220,10 @@ const PRODUCTS = [
     "dept": "shirts",
     "price": 99,
     "priceHigh": null,
-    "img": "images/shop/p107.webp"
+    "img": "images/shop/p107.webp",
+    "gallery": [
+      "images/shop-gallery/p107-2.webp"
+    ]
   },
   {
     "id": "p108",
@@ -861,7 +1231,10 @@ const PRODUCTS = [
     "dept": "shirts",
     "price": 80,
     "priceHigh": null,
-    "img": "images/shop/p108.webp"
+    "img": "images/shop/p108.webp",
+    "gallery": [
+      "images/shop-gallery/p108-2.webp"
+    ]
   },
   {
     "id": "p109",
@@ -869,7 +1242,12 @@ const PRODUCTS = [
     "dept": "accessories",
     "price": 40,
     "priceHigh": null,
-    "img": "images/shop/p109.webp"
+    "img": "images/shop/p109.webp",
+    "gallery": [
+      "images/shop-gallery/p109-2.webp",
+      "images/shop-gallery/p109-3.webp",
+      "images/shop-gallery/p109-4.webp"
+    ]
   },
   {
     "id": "p110",
@@ -877,15 +1255,23 @@ const PRODUCTS = [
     "dept": "shirts",
     "price": 59,
     "priceHigh": null,
-    "img": "images/shop/p110.webp"
+    "img": "images/shop/p110.webp",
+    "gallery": [
+      "images/shop-gallery/p110-2.webp",
+      "images/shop-gallery/p110-3.webp"
+    ]
   },
   {
     "id": "p111",
     "name": "Veja / V12 / Olive",
     "dept": "shoes",
     "price": 120,
-    "priceHigh": 160.0,
-    "img": "images/shop/p111.webp"
+    "priceHigh": 160,
+    "img": "images/shop/p111.webp",
+    "gallery": [
+      "images/shop-gallery/p111-2.webp",
+      "images/shop-gallery/p111-3.webp"
+    ]
   },
   {
     "id": "p112",
@@ -893,7 +1279,10 @@ const PRODUCTS = [
     "dept": "accessories",
     "price": 45,
     "priceHigh": null,
-    "img": "images/shop/p112.webp"
+    "img": "images/shop/p112.webp",
+    "gallery": [
+      "images/shop-gallery/p112-2.webp"
+    ]
   },
   {
     "id": "p113",
@@ -901,7 +1290,8 @@ const PRODUCTS = [
     "dept": "personal-care",
     "price": 26,
     "priceHigh": null,
-    "img": "images/shop/p113.webp"
+    "img": "images/shop/p113.webp",
+    "gallery": []
   },
   {
     "id": "p114",
@@ -909,7 +1299,11 @@ const PRODUCTS = [
     "dept": "shirts",
     "price": 99,
     "priceHigh": null,
-    "img": "images/shop/p114.webp"
+    "img": "images/shop/p114.webp",
+    "gallery": [
+      "images/shop-gallery/p114-2.webp",
+      "images/shop-gallery/p114-3.webp"
+    ]
   },
   {
     "id": "p115",
@@ -917,7 +1311,13 @@ const PRODUCTS = [
     "dept": "accessories",
     "price": 45,
     "priceHigh": null,
-    "img": "images/shop/p115.webp"
+    "img": "images/shop/p115.webp",
+    "gallery": [
+      "images/shop-gallery/p115-2.webp",
+      "images/shop-gallery/p115-3.webp",
+      "images/shop-gallery/p115-4.webp",
+      "images/shop-gallery/p115-5.webp"
+    ]
   },
   {
     "id": "p116",
@@ -925,6 +1325,10 @@ const PRODUCTS = [
     "dept": "personal-care",
     "price": 44,
     "priceHigh": null,
-    "img": "images/shop/p116.webp"
+    "img": "images/shop/p116.webp",
+    "gallery": [
+      "images/shop-gallery/p116-2.webp",
+      "images/shop-gallery/p116-3.webp"
+    ]
   }
 ];

@@ -88,6 +88,25 @@
   </section>
 </main>
 
+<div class="product-overlay" id="productOverlay"></div>
+<div class="product-modal" id="productModal" role="dialog" aria-modal="true" aria-labelledby="productModalTitle">
+  <button type="button" class="product-modal-close" id="productModalClose" aria-label="Close">&times;</button>
+  <div class="product-modal-gallery">
+    <div class="product-modal-stage">
+      <button type="button" class="product-modal-nav product-modal-prev" id="productModalPrev" aria-label="Previous image">&lsaquo;</button>
+      <img src="" alt="" id="productModalImage">
+      <button type="button" class="product-modal-nav product-modal-next" id="productModalNext" aria-label="Next image">&rsaquo;</button>
+    </div>
+    <div class="product-modal-thumbs" id="productModalThumbs"></div>
+  </div>
+  <div class="product-modal-body">
+    <p class="stock-tag-no" id="productModalDept"></p>
+    <h2 id="productModalTitle"></h2>
+    <p class="product-modal-price" id="productModalPrice"></p>
+    <button type="button" class="btn btn-primary" id="productModalAdd">Add to cart</button>
+  </div>
+</div>
+
 <footer class="site-footer">
   <div class="wrap footer-inner">
     <div class="footer-brand">
