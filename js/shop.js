@@ -25,6 +25,10 @@
   }
 
   function cardHtml(p) {
+    var hasSizes = p.sizes && p.sizes.length;
+    var actionBtn = hasSizes
+      ? '<button type="button" class="btn btn-primary btn-small" data-pick-size="' + p.id + '">Select size</button>'
+      : '<button type="button" class="btn btn-primary btn-small" data-add="' + p.id + '">Add to cart</button>';
     return (
       '<li class="shop-card" data-dept="' + p.dept + '" data-id="' + p.id + '">' +
         '<div class="shop-card-photo"><img src="' + p.img + '" loading="lazy" alt="' + p.name + '"></div>' +
@@ -33,7 +37,7 @@
           '<h3>' + p.name + '</h3>' +
           '<div class="shop-card-row">' +
             '<span class="shop-price">' + formatPrice(p) + '</span>' +
-            '<button type="button" class="btn btn-primary btn-small" data-add="' + p.id + '">Add to cart</button>' +
+            actionBtn +
           '</div>' +
         '</div>' +
       '</li>'
@@ -109,8 +113,21 @@
   var modalPrice = document.getElementById('productModalPrice');
   var modalAdd = document.getElementById('productModalAdd');
   var modalClose = document.getElementById('productModalClose');
+  var modalSizeLabel = document.getElementById('productModalSizeLabel');
+  var modalSizes = document.getElementById('productModalSizes');
   var modalImages = [];
   var modalIndex = 0;
+  var selectedSize = null;
+
+  function updateAddButtonState() {
+    var needsSize = modalSizes.children.length > 0;
+    modalAdd.disabled = needsSize && !selectedSize;
+    if (selectedSize) {
+      modalAdd.setAttribute('data-size', selectedSize);
+    } else {
+      modalAdd.removeAttribute('data-size');
+    }
+  }
 
   function setModalImage(i) {
     modalIndex = (i + modalImages.length) % modalImages.length;
@@ -143,6 +160,27 @@
       });
     });
 
+    selectedSize = null;
+    var hasSizes = product.sizes && product.sizes.length;
+    modalSizeLabel.hidden = !hasSizes;
+    modalSizes.innerHTML = hasSizes
+      ? product.sizes.map(function (s) {
+          var cls = 'size-chip' + (s.soldOut ? ' is-sold-out' : '');
+          return '<button type="button" class="' + cls + '" data-size="' + s.name + '"' +
+            (s.soldOut ? ' disabled' : '') + '>' + s.name + '</button>';
+        }).join('')
+      : '';
+    modalSizes.querySelectorAll('button:not([disabled])').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        selectedSize = btn.getAttribute('data-size');
+        modalSizes.querySelectorAll('button').forEach(function (b) {
+          b.classList.toggle('is-selected', b === btn);
+        });
+        updateAddButtonState();
+      });
+    });
+    updateAddButtonState();
+
     setModalImage(0);
     overlay.classList.add('is-open');
     modal.classList.add('is-open');
@@ -165,9 +203,9 @@
   });
 
   grid.addEventListener('click', function (e) {
-    var photo = e.target.closest('.shop-card-photo');
-    if (!photo) return;
-    var card = photo.closest('.shop-card');
+    var trigger = e.target.closest('.shop-card-photo, [data-pick-size]');
+    if (!trigger) return;
+    var card = trigger.closest('.shop-card');
     var product = PRODUCTS.find(function (p) { return p.id === card.dataset.id; });
     if (product) openProductModal(product);
   });

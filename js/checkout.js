@@ -24,6 +24,7 @@
           '<img src="' + e.product.img + '" alt="">' +
           '<div class="checkout-line-info">' +
             '<p class="checkout-line-name">' + e.product.name + '</p>' +
+            (e.size ? '<p class="checkout-line-size">Size ' + e.size + '</p>' : '') +
             '<p class="checkout-line-qty">Qty ' + e.qty + '</p>' +
           '</div>' +
           '<span class="checkout-line-price">' + Cart.money(e.product.price * e.qty) + '</span>' +

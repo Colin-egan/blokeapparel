@@ -2,10 +2,20 @@
 (function () {
   var STORAGE_KEY = 'bloke-cart-v1';
 
+  function cartKey(id, size) {
+    return size ? id + '::' + size : id;
+  }
+
   function readCart() {
     try {
       var raw = localStorage.getItem(STORAGE_KEY);
-      return raw ? JSON.parse(raw) : {};
+      var cart = raw ? JSON.parse(raw) : {};
+      var migrated = {};
+      Object.keys(cart).forEach(function (key) {
+        var val = cart[key];
+        migrated[key] = typeof val === 'number' ? { id: key, size: null, qty: val } : val;
+      });
+      return migrated;
     } catch (e) {
       return {};
     }
@@ -20,27 +30,29 @@
     return (typeof PRODUCTS !== 'undefined' ? PRODUCTS : []).find(function (p) { return p.id === id; });
   }
 
-  function addToCart(id, qty) {
+  function addToCart(id, size, qty) {
     qty = qty || 1;
     var cart = readCart();
-    cart[id] = (cart[id] || 0) + qty;
+    var key = cartKey(id, size);
+    var existingQty = cart[key] ? cart[key].qty : 0;
+    cart[key] = { id: id, size: size || null, qty: existingQty + qty };
     writeCart(cart);
     openDrawer();
   }
 
-  function setQty(id, qty) {
+  function setQty(key, qty) {
     var cart = readCart();
     if (qty <= 0) {
-      delete cart[id];
-    } else {
-      cart[id] = qty;
+      delete cart[key];
+    } else if (cart[key]) {
+      cart[key].qty = qty;
     }
     writeCart(cart);
   }
 
-  function removeFromCart(id) {
+  function removeFromCart(key) {
     var cart = readCart();
-    delete cart[id];
+    delete cart[key];
     writeCart(cart);
   }
 
@@ -50,15 +62,15 @@
 
   function cartEntries() {
     var cart = readCart();
-    return Object.keys(cart).map(function (id) {
-      var product = productById(id);
-      return product ? { product: product, qty: cart[id] } : null;
+    return Object.keys(cart).map(function (key) {
+      var line = cart[key];
+      var product = productById(line.id);
+      return product ? { key: key, product: product, size: line.size, qty: line.qty } : null;
     }).filter(Boolean);
   }
 
   function cartCount() {
-    var cart = readCart();
-    return Object.keys(cart).reduce(function (sum, id) { return sum + cart[id]; }, 0);
+    return cartEntries().reduce(function (sum, e) { return sum + e.qty; }, 0);
   }
 
   function cartTotal() {
@@ -134,10 +146,11 @@
 
     body.innerHTML = entries.map(function (e) {
       return (
-        '<div class="cart-line" data-id="' + e.product.id + '">' +
+        '<div class="cart-line" data-key="' + e.key + '">' +
           '<img src="' + e.product.img + '" alt="">' +
           '<div class="cart-line-info">' +
             '<p class="cart-line-name">' + e.product.name + '</p>' +
+            (e.size ? '<p class="cart-line-size">Size ' + e.size + '</p>' : '') +
             '<p class="cart-line-price">' + money(e.product.price) + '</p>' +
             '<div class="cart-line-qty">' +
               '<button type="button" class="qty-btn" data-qty-down>&minus;</button>' +
@@ -157,22 +170,22 @@
 
     body.querySelectorAll('[data-qty-up]').forEach(function (btn) {
       btn.addEventListener('click', function () {
-        var id = btn.closest('.cart-line').dataset.id;
-        var current = readCart()[id] || 0;
-        setQty(id, current + 1);
+        var key = btn.closest('.cart-line').dataset.key;
+        var current = (readCart()[key] || {}).qty || 0;
+        setQty(key, current + 1);
       });
     });
     body.querySelectorAll('[data-qty-down]').forEach(function (btn) {
       btn.addEventListener('click', function () {
-        var id = btn.closest('.cart-line').dataset.id;
-        var current = readCart()[id] || 0;
-        setQty(id, current - 1);
+        var key = btn.closest('.cart-line').dataset.key;
+        var current = (readCart()[key] || {}).qty || 0;
+        setQty(key, current - 1);
       });
     });
     body.querySelectorAll('[data-remove]').forEach(function (btn) {
       btn.addEventListener('click', function () {
-        var id = btn.closest('.cart-line').dataset.id;
-        removeFromCart(id);
+        var key = btn.closest('.cart-line').dataset.key;
+        removeFromCart(key);
       });
     });
   }
@@ -201,7 +214,7 @@
     document.body.addEventListener('click', function (e) {
       var btn = e.target.closest('[data-add]');
       if (btn) {
-        addToCart(btn.getAttribute('data-add'), 1);
+        addToCart(btn.getAttribute('data-add'), btn.getAttribute('data-size') || null, 1);
       }
     });
   }

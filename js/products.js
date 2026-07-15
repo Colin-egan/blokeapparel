@@ -6,7 +6,33 @@ const PRODUCTS = [
     "price": 228,
     "priceHigh": null,
     "img": "images/shop/p000.webp",
-    "gallery": []
+    "gallery": [],
+    "sizes": [
+      {
+        "name": "30",
+        "soldOut": true
+      },
+      {
+        "name": "31",
+        "soldOut": false
+      },
+      {
+        "name": "32",
+        "soldOut": false
+      },
+      {
+        "name": "33",
+        "soldOut": false
+      },
+      {
+        "name": "34",
+        "soldOut": false
+      },
+      {
+        "name": "36",
+        "soldOut": false
+      }
+    ]
   },
   {
     "id": "p001",
@@ -19,6 +45,28 @@ const PRODUCTS = [
       "images/shop-gallery/p001-2.webp",
       "images/shop-gallery/p001-3.webp",
       "images/shop-gallery/p001-4.webp"
+    ],
+    "sizes": [
+      {
+        "name": "Small",
+        "soldOut": false
+      },
+      {
+        "name": "Medium",
+        "soldOut": false
+      },
+      {
+        "name": "Large",
+        "soldOut": false
+      },
+      {
+        "name": "XLarge",
+        "soldOut": false
+      },
+      {
+        "name": "XXLarge",
+        "soldOut": false
+      }
     ]
   },
   {
@@ -30,6 +78,28 @@ const PRODUCTS = [
     "img": "images/shop/p002.webp",
     "gallery": [
       "images/shop-gallery/p002-2.webp"
+    ],
+    "sizes": [
+      {
+        "name": "Small",
+        "soldOut": false
+      },
+      {
+        "name": "Medium",
+        "soldOut": false
+      },
+      {
+        "name": "Large",
+        "soldOut": false
+      },
+      {
+        "name": "XLarge",
+        "soldOut": false
+      },
+      {
+        "name": "XXL",
+        "soldOut": false
+      }
     ]
   },
   {
@@ -42,6 +112,28 @@ const PRODUCTS = [
     "gallery": [
       "images/shop-gallery/p003-2.webp",
       "images/shop-gallery/p003-3.webp"
+    ],
+    "sizes": [
+      {
+        "name": "Small",
+        "soldOut": false
+      },
+      {
+        "name": "Medium",
+        "soldOut": true
+      },
+      {
+        "name": "Large",
+        "soldOut": true
+      },
+      {
+        "name": "XLarge",
+        "soldOut": false
+      },
+      {
+        "name": "XXLarge",
+        "soldOut": true
+      }
     ]
   },
   {
@@ -57,6 +149,88 @@ const PRODUCTS = [
       "images/shop-gallery/p004-4.webp",
       "images/shop-gallery/p004-5.webp",
       "images/shop-gallery/p004-6.webp"
+    ],
+    "sizes": [
+      {
+        "name": "28 / 34",
+        "soldOut": false
+      },
+      {
+        "name": "29 / 32",
+        "soldOut": true
+      },
+      {
+        "name": "29 / 34",
+        "soldOut": false
+      },
+      {
+        "name": "30 / 30",
+        "soldOut": true
+      },
+      {
+        "name": "30 / 32",
+        "soldOut": false
+      },
+      {
+        "name": "30 / 34",
+        "soldOut": false
+      },
+      {
+        "name": "31 / 32",
+        "soldOut": false
+      },
+      {
+        "name": "31 / 34",
+        "soldOut": true
+      },
+      {
+        "name": "32 / 30",
+        "soldOut": true
+      },
+      {
+        "name": "32 / 32",
+        "soldOut": false
+      },
+      {
+        "name": "32 / 34",
+        "soldOut": false
+      },
+      {
+        "name": "33 / 32",
+        "soldOut": false
+      },
+      {
+        "name": "33 / 34",
+        "soldOut": true
+      },
+      {
+        "name": "34 / 32",
+        "soldOut": true
+      },
+      {
+        "name": "34 / 34",
+        "soldOut": true
+      },
+      {
+        "name": "35 / 32",
+        "soldOut": true
+      },
+      {
+        "name": "35 / 34",
+        "soldOut": true
+      },
+      {
+        "name": "36 / 32",
+        "soldOut": true
+      },
+      {
+        "name": "36 / 34",
+        "soldOut": true
+      },
+      {
+        "name": "38 / 32",
+        "soldOut": true
+      }
     ]
   },
   {
@@ -70,6 +244,24 @@ const PRODUCTS = [
       "images/shop-gallery/p005-2.webp",
       "images/shop-gallery/p005-3.webp",
       "images/shop-gallery/p005-4.webp"
+    ],
+    "sizes": [
+      {
+        "name": "Small",
+        "soldOut": false
+      },
+      {
+        "name": "Medium",
+        "soldOut": false
+      },
+      {
+        "name": "Large",
+        "soldOut": true
+      },
+      {
+        "name": "XLarge",
+        "soldOut": false
+      }
     ]
   },
   {
@@ -79,7 +271,8 @@ const PRODUCTS = [
     "price": 20,
     "priceHigh": null,
     "img": "images/shop/p006.webp",
-    "gallery": []
+    "gallery": [],
+    "sizes": []
   },
   {
     "id": "p007",
@@ -91,7 +284,8 @@ const PRODUCTS = [
     "gallery": [
       "images/shop-gallery/p007-2.webp",
       "images/shop-gallery/p007-3.webp"
-    ]
+    ],
+    "sizes": []
   },
   {
     "id": "p008",
@@ -105,6 +299,36 @@ const PRODUCTS = [
       "images/shop-gallery/p008-3.webp",
       "images/shop-gallery/p008-4.webp",
       "images/shop-gallery/p008-5.webp"
+    ],
+    "sizes": [
+      {
+        "name": "30",
+        "soldOut": false
+      },
+      {
+        "name": "31",
+        "soldOut": false
+      },
+      {
+        "name": "32",
+        "soldOut": false
+      },
+      {
+        "name": "33",
+        "soldOut": false
+      },
+      {
+        "name": "34",
+        "soldOut": false
+      },
+      {
+        "name": "36",
+        "soldOut": false
+      },
+      {
+        "name": "38",
+        "soldOut": true
+      }
     ]
   },
   {
@@ -114,7 +338,8 @@ const PRODUCTS = [
     "price": 22,
     "priceHigh": null,
     "img": "images/shop/p009.webp",
-    "gallery": []
+    "gallery": [],
+    "sizes": []
   },
   {
     "id": "p010",
@@ -123,7 +348,8 @@ const PRODUCTS = [
     "price": 22,
     "priceHigh": null,
     "img": "images/shop/p010.webp",
-    "gallery": []
+    "gallery": [],
+    "sizes": []
   },
   {
     "id": "p011",
@@ -135,7 +361,8 @@ const PRODUCTS = [
     "gallery": [
       "images/shop-gallery/p011-2.webp",
       "images/shop-gallery/p011-3.webp"
-    ]
+    ],
+    "sizes": []
   },
   {
     "id": "p012",
@@ -147,6 +374,32 @@ const PRODUCTS = [
     "gallery": [
       "images/shop-gallery/p012-2.webp",
       "images/shop-gallery/p012-3.webp"
+    ],
+    "sizes": [
+      {
+        "name": "41",
+        "soldOut": false
+      },
+      {
+        "name": "42",
+        "soldOut": false
+      },
+      {
+        "name": "43",
+        "soldOut": false
+      },
+      {
+        "name": "44",
+        "soldOut": false
+      },
+      {
+        "name": "46",
+        "soldOut": false
+      },
+      {
+        "name": "48",
+        "soldOut": false
+      }
     ]
   },
   {
@@ -159,7 +412,8 @@ const PRODUCTS = [
     "gallery": [
       "images/shop-gallery/p013-2.webp",
       "images/shop-gallery/p013-3.webp"
-    ]
+    ],
+    "sizes": []
   },
   {
     "id": "p014",
@@ -171,7 +425,8 @@ const PRODUCTS = [
     "gallery": [
       "images/shop-gallery/p014-2.webp",
       "images/shop-gallery/p014-3.webp"
-    ]
+    ],
+    "sizes": []
   },
   {
     "id": "p015",
@@ -180,7 +435,8 @@ const PRODUCTS = [
     "price": 9,
     "priceHigh": null,
     "img": "images/shop/p015.webp",
-    "gallery": []
+    "gallery": [],
+    "sizes": []
   },
   {
     "id": "p016",
@@ -191,7 +447,8 @@ const PRODUCTS = [
     "img": "images/shop/p016.webp",
     "gallery": [
       "images/shop-gallery/p016-2.webp"
-    ]
+    ],
+    "sizes": []
   },
   {
     "id": "p017",
@@ -202,6 +459,24 @@ const PRODUCTS = [
     "img": "images/shop/p017.webp",
     "gallery": [
       "images/shop-gallery/p017-2.webp"
+    ],
+    "sizes": [
+      {
+        "name": "S (30)",
+        "soldOut": true
+      },
+      {
+        "name": "M (32)",
+        "soldOut": true
+      },
+      {
+        "name": "L (34)",
+        "soldOut": true
+      },
+      {
+        "name": "XLarge",
+        "soldOut": false
+      }
     ]
   },
   {
@@ -214,7 +489,8 @@ const PRODUCTS = [
     "gallery": [
       "images/shop-gallery/p018-2.webp",
       "images/shop-gallery/p018-3.webp"
-    ]
+    ],
+    "sizes": []
   },
   {
     "id": "p019",
@@ -225,6 +501,28 @@ const PRODUCTS = [
     "img": "images/shop/p019.webp",
     "gallery": [
       "images/shop-gallery/p019-2.webp"
+    ],
+    "sizes": [
+      {
+        "name": "Small",
+        "soldOut": false
+      },
+      {
+        "name": "Medium",
+        "soldOut": false
+      },
+      {
+        "name": "Large",
+        "soldOut": false
+      },
+      {
+        "name": "XLarge",
+        "soldOut": false
+      },
+      {
+        "name": "XXL",
+        "soldOut": false
+      }
     ]
   },
   {
@@ -238,6 +536,44 @@ const PRODUCTS = [
       "images/shop-gallery/p020-2.webp",
       "images/shop-gallery/p020-3.webp",
       "images/shop-gallery/p020-4.webp"
+    ],
+    "sizes": [
+      {
+        "name": "30/32",
+        "soldOut": false
+      },
+      {
+        "name": "31/32",
+        "soldOut": true
+      },
+      {
+        "name": "32/32",
+        "soldOut": false
+      },
+      {
+        "name": "32/34",
+        "soldOut": false
+      },
+      {
+        "name": "33/32",
+        "soldOut": true
+      },
+      {
+        "name": "34/32",
+        "soldOut": true
+      },
+      {
+        "name": "34/34",
+        "soldOut": true
+      },
+      {
+        "name": "35/32",
+        "soldOut": true
+      },
+      {
+        "name": "36/32",
+        "soldOut": true
+      }
     ]
   },
   {
@@ -249,7 +585,8 @@ const PRODUCTS = [
     "img": "images/shop/p021.webp",
     "gallery": [
       "images/shop-gallery/p021-2.webp"
-    ]
+    ],
+    "sizes": []
   },
   {
     "id": "p022",
@@ -258,7 +595,8 @@ const PRODUCTS = [
     "price": 9,
     "priceHigh": null,
     "img": "images/shop/p022.webp",
-    "gallery": []
+    "gallery": [],
+    "sizes": []
   },
   {
     "id": "p023",
@@ -270,6 +608,28 @@ const PRODUCTS = [
     "gallery": [
       "images/shop-gallery/p023-2.webp",
       "images/shop-gallery/p023-3.webp"
+    ],
+    "sizes": [
+      {
+        "name": "Small",
+        "soldOut": true
+      },
+      {
+        "name": "Medium",
+        "soldOut": true
+      },
+      {
+        "name": "Large",
+        "soldOut": false
+      },
+      {
+        "name": "XLarge",
+        "soldOut": false
+      },
+      {
+        "name": "XXLarge",
+        "soldOut": false
+      }
     ]
   },
   {
@@ -279,7 +639,8 @@ const PRODUCTS = [
     "price": 40,
     "priceHigh": null,
     "img": "images/shop/p024.webp",
-    "gallery": []
+    "gallery": [],
+    "sizes": []
   },
   {
     "id": "p025",
@@ -290,7 +651,8 @@ const PRODUCTS = [
     "img": "images/shop/p025.webp",
     "gallery": [
       "images/shop-gallery/p025-2.webp"
-    ]
+    ],
+    "sizes": []
   },
   {
     "id": "p026",
@@ -303,7 +665,8 @@ const PRODUCTS = [
       "images/shop-gallery/p026-2.webp",
       "images/shop-gallery/p026-3.webp",
       "images/shop-gallery/p026-4.webp"
-    ]
+    ],
+    "sizes": []
   },
   {
     "id": "p027",
@@ -314,7 +677,8 @@ const PRODUCTS = [
     "img": "images/shop/p027.webp",
     "gallery": [
       "images/shop-gallery/p027-2.webp"
-    ]
+    ],
+    "sizes": []
   },
   {
     "id": "p028",
@@ -326,7 +690,8 @@ const PRODUCTS = [
     "gallery": [
       "images/shop-gallery/p028-2.webp",
       "images/shop-gallery/p028-3.webp"
-    ]
+    ],
+    "sizes": []
   },
   {
     "id": "p029",
@@ -335,7 +700,25 @@ const PRODUCTS = [
     "price": 74,
     "priceHigh": null,
     "img": "images/shop/p029.webp",
-    "gallery": []
+    "gallery": [],
+    "sizes": [
+      {
+        "name": "Small",
+        "soldOut": false
+      },
+      {
+        "name": "Medium",
+        "soldOut": true
+      },
+      {
+        "name": "Large",
+        "soldOut": true
+      },
+      {
+        "name": "XLarge",
+        "soldOut": false
+      }
+    ]
   },
   {
     "id": "p030",
@@ -344,7 +727,33 @@ const PRODUCTS = [
     "price": 228,
     "priceHigh": null,
     "img": "images/shop/p030.webp",
-    "gallery": []
+    "gallery": [],
+    "sizes": [
+      {
+        "name": "30",
+        "soldOut": false
+      },
+      {
+        "name": "31",
+        "soldOut": true
+      },
+      {
+        "name": "32",
+        "soldOut": false
+      },
+      {
+        "name": "33",
+        "soldOut": false
+      },
+      {
+        "name": "34",
+        "soldOut": false
+      },
+      {
+        "name": "36",
+        "soldOut": false
+      }
+    ]
   },
   {
     "id": "p031",
@@ -358,6 +767,44 @@ const PRODUCTS = [
       "images/shop-gallery/p031-3.webp",
       "images/shop-gallery/p031-4.webp",
       "images/shop-gallery/p031-5.webp"
+    ],
+    "sizes": [
+      {
+        "name": "30/32",
+        "soldOut": false
+      },
+      {
+        "name": "31/32",
+        "soldOut": false
+      },
+      {
+        "name": "32/32",
+        "soldOut": false
+      },
+      {
+        "name": "32/34",
+        "soldOut": false
+      },
+      {
+        "name": "33/32",
+        "soldOut": false
+      },
+      {
+        "name": "34/32",
+        "soldOut": false
+      },
+      {
+        "name": "34/34",
+        "soldOut": false
+      },
+      {
+        "name": "35/32",
+        "soldOut": true
+      },
+      {
+        "name": "36/32",
+        "soldOut": true
+      }
     ]
   },
   {
@@ -369,7 +816,8 @@ const PRODUCTS = [
     "img": "images/shop/p032.webp",
     "gallery": [
       "images/shop-gallery/p032-2.webp"
-    ]
+    ],
+    "sizes": []
   },
   {
     "id": "p033",
@@ -381,6 +829,32 @@ const PRODUCTS = [
     "gallery": [
       "images/shop-gallery/p033-2.webp",
       "images/shop-gallery/p033-3.webp"
+    ],
+    "sizes": [
+      {
+        "name": "41",
+        "soldOut": false
+      },
+      {
+        "name": "42",
+        "soldOut": false
+      },
+      {
+        "name": "43",
+        "soldOut": true
+      },
+      {
+        "name": "44",
+        "soldOut": false
+      },
+      {
+        "name": "46",
+        "soldOut": false
+      },
+      {
+        "name": "48",
+        "soldOut": false
+      }
     ]
   },
   {
@@ -392,7 +866,8 @@ const PRODUCTS = [
     "img": "images/shop/p034.webp",
     "gallery": [
       "images/shop-gallery/p034-2.webp"
-    ]
+    ],
+    "sizes": []
   },
   {
     "id": "p035",
@@ -405,6 +880,32 @@ const PRODUCTS = [
       "images/shop-gallery/p035-2.webp",
       "images/shop-gallery/p035-3.webp",
       "images/shop-gallery/p035-4.webp"
+    ],
+    "sizes": [
+      {
+        "name": "41",
+        "soldOut": false
+      },
+      {
+        "name": "42",
+        "soldOut": false
+      },
+      {
+        "name": "43",
+        "soldOut": false
+      },
+      {
+        "name": "44",
+        "soldOut": false
+      },
+      {
+        "name": "46",
+        "soldOut": false
+      },
+      {
+        "name": "48",
+        "soldOut": false
+      }
     ]
   },
   {
@@ -416,6 +917,24 @@ const PRODUCTS = [
     "img": "images/shop/p036.webp",
     "gallery": [
       "images/shop-gallery/p036-2.webp"
+    ],
+    "sizes": [
+      {
+        "name": "Small",
+        "soldOut": false
+      },
+      {
+        "name": "Medium",
+        "soldOut": true
+      },
+      {
+        "name": "Large",
+        "soldOut": false
+      },
+      {
+        "name": "XLarge",
+        "soldOut": false
+      }
     ]
   },
   {
@@ -430,6 +949,28 @@ const PRODUCTS = [
       "images/shop-gallery/p037-3.webp",
       "images/shop-gallery/p037-4.webp",
       "images/shop-gallery/p037-5.webp"
+    ],
+    "sizes": [
+      {
+        "name": "30",
+        "soldOut": false
+      },
+      {
+        "name": "31",
+        "soldOut": false
+      },
+      {
+        "name": "32",
+        "soldOut": false
+      },
+      {
+        "name": "33",
+        "soldOut": false
+      },
+      {
+        "name": "34",
+        "soldOut": false
+      }
     ]
   },
   {
@@ -439,7 +980,25 @@ const PRODUCTS = [
     "price": 85,
     "priceHigh": null,
     "img": "images/shop/p038.webp",
-    "gallery": []
+    "gallery": [],
+    "sizes": [
+      {
+        "name": "Small",
+        "soldOut": false
+      },
+      {
+        "name": "Medium",
+        "soldOut": false
+      },
+      {
+        "name": "Large",
+        "soldOut": false
+      },
+      {
+        "name": "XLarge",
+        "soldOut": false
+      }
+    ]
   },
   {
     "id": "p039",
@@ -450,7 +1009,8 @@ const PRODUCTS = [
     "img": "images/shop/p039.webp",
     "gallery": [
       "images/shop-gallery/p039-2.webp"
-    ]
+    ],
+    "sizes": []
   },
   {
     "id": "p040",
@@ -462,6 +1022,24 @@ const PRODUCTS = [
     "gallery": [
       "images/shop-gallery/p040-2.webp",
       "images/shop-gallery/p040-3.webp"
+    ],
+    "sizes": [
+      {
+        "name": "Small",
+        "soldOut": true
+      },
+      {
+        "name": "Medium",
+        "soldOut": true
+      },
+      {
+        "name": "Large",
+        "soldOut": true
+      },
+      {
+        "name": "XLarge",
+        "soldOut": false
+      }
     ]
   },
   {
@@ -473,7 +1051,8 @@ const PRODUCTS = [
     "img": "images/shop/p042.webp",
     "gallery": [
       "images/shop-gallery/p042-2.webp"
-    ]
+    ],
+    "sizes": []
   },
   {
     "id": "p043",
@@ -486,6 +1065,32 @@ const PRODUCTS = [
       "images/shop-gallery/p043-2.webp",
       "images/shop-gallery/p043-3.webp",
       "images/shop-gallery/p043-4.webp"
+    ],
+    "sizes": [
+      {
+        "name": "8",
+        "soldOut": false
+      },
+      {
+        "name": "9",
+        "soldOut": false
+      },
+      {
+        "name": "10",
+        "soldOut": false
+      },
+      {
+        "name": "11",
+        "soldOut": false
+      },
+      {
+        "name": "11.5",
+        "soldOut": true
+      },
+      {
+        "name": "12",
+        "soldOut": false
+      }
     ]
   },
   {
@@ -499,6 +1104,24 @@ const PRODUCTS = [
       "images/shop-gallery/p044-2.webp",
       "images/shop-gallery/p044-3.webp",
       "images/shop-gallery/p044-4.webp"
+    ],
+    "sizes": [
+      {
+        "name": "Small",
+        "soldOut": true
+      },
+      {
+        "name": "Medium",
+        "soldOut": true
+      },
+      {
+        "name": "Large",
+        "soldOut": true
+      },
+      {
+        "name": "XLarge",
+        "soldOut": true
+      }
     ]
   },
   {
@@ -512,7 +1135,8 @@ const PRODUCTS = [
       "images/shop-gallery/p045-2.webp",
       "images/shop-gallery/p045-3.webp",
       "images/shop-gallery/p045-4.webp"
-    ]
+    ],
+    "sizes": []
   },
   {
     "id": "p046",
@@ -521,7 +1145,8 @@ const PRODUCTS = [
     "price": 50,
     "priceHigh": null,
     "img": "images/shop/p046.webp",
-    "gallery": []
+    "gallery": [],
+    "sizes": []
   },
   {
     "id": "p047",
@@ -530,7 +1155,8 @@ const PRODUCTS = [
     "price": 28,
     "priceHigh": null,
     "img": "images/shop/p047.webp",
-    "gallery": []
+    "gallery": [],
+    "sizes": []
   },
   {
     "id": "p048",
@@ -541,7 +1167,8 @@ const PRODUCTS = [
     "img": "images/shop/p048.webp",
     "gallery": [
       "images/shop-gallery/p048-2.webp"
-    ]
+    ],
+    "sizes": []
   },
   {
     "id": "p049",
@@ -554,6 +1181,24 @@ const PRODUCTS = [
       "images/shop-gallery/p049-2.webp",
       "images/shop-gallery/p049-3.webp",
       "images/shop-gallery/p049-4.webp"
+    ],
+    "sizes": [
+      {
+        "name": "S/30",
+        "soldOut": true
+      },
+      {
+        "name": "M/32",
+        "soldOut": true
+      },
+      {
+        "name": "L/34",
+        "soldOut": true
+      },
+      {
+        "name": "XL/36",
+        "soldOut": true
+      }
     ]
   },
   {
@@ -563,7 +1208,8 @@ const PRODUCTS = [
     "price": 54,
     "priceHigh": null,
     "img": "images/shop/p050.webp",
-    "gallery": []
+    "gallery": [],
+    "sizes": []
   },
   {
     "id": "p051",
@@ -577,6 +1223,48 @@ const PRODUCTS = [
       "images/shop-gallery/p051-3.webp",
       "images/shop-gallery/p051-4.webp",
       "images/shop-gallery/p051-5.webp"
+    ],
+    "sizes": [
+      {
+        "name": "Regular",
+        "soldOut": false
+      },
+      {
+        "name": "30 / 32",
+        "soldOut": true
+      },
+      {
+        "name": "31 / 32",
+        "soldOut": true
+      },
+      {
+        "name": "32 / 32",
+        "soldOut": true
+      },
+      {
+        "name": "32 / 34",
+        "soldOut": false
+      },
+      {
+        "name": "33 / 32",
+        "soldOut": true
+      },
+      {
+        "name": "34 / 32",
+        "soldOut": true
+      },
+      {
+        "name": "34 / 34",
+        "soldOut": true
+      },
+      {
+        "name": "35 / 32",
+        "soldOut": true
+      },
+      {
+        "name": "36 / 32",
+        "soldOut": true
+      }
     ]
   },
   {
@@ -588,6 +1276,28 @@ const PRODUCTS = [
     "img": "images/shop/p052.webp",
     "gallery": [
       "images/shop-gallery/p052-2.webp"
+    ],
+    "sizes": [
+      {
+        "name": "Small",
+        "soldOut": false
+      },
+      {
+        "name": "Medium",
+        "soldOut": false
+      },
+      {
+        "name": "Large",
+        "soldOut": false
+      },
+      {
+        "name": "XLarge",
+        "soldOut": false
+      },
+      {
+        "name": "XXL",
+        "soldOut": false
+      }
     ]
   },
   {
@@ -597,7 +1307,8 @@ const PRODUCTS = [
     "price": 22,
     "priceHigh": null,
     "img": "images/shop/p053.webp",
-    "gallery": []
+    "gallery": [],
+    "sizes": []
   },
   {
     "id": "p054",
@@ -609,6 +1320,32 @@ const PRODUCTS = [
     "gallery": [
       "images/shop-gallery/p054-2.webp",
       "images/shop-gallery/p054-3.webp"
+    ],
+    "sizes": [
+      {
+        "name": "41",
+        "soldOut": false
+      },
+      {
+        "name": "42",
+        "soldOut": false
+      },
+      {
+        "name": "43",
+        "soldOut": false
+      },
+      {
+        "name": "44",
+        "soldOut": false
+      },
+      {
+        "name": "46",
+        "soldOut": false
+      },
+      {
+        "name": "48",
+        "soldOut": false
+      }
     ]
   },
   {
@@ -622,6 +1359,24 @@ const PRODUCTS = [
       "images/shop-gallery/p055-2.webp",
       "images/shop-gallery/p055-3.webp",
       "images/shop-gallery/p055-4.webp"
+    ],
+    "sizes": [
+      {
+        "name": "Small",
+        "soldOut": true
+      },
+      {
+        "name": "Medium",
+        "soldOut": true
+      },
+      {
+        "name": "Large",
+        "soldOut": true
+      },
+      {
+        "name": "XLarge",
+        "soldOut": true
+      }
     ]
   },
   {
@@ -633,6 +1388,24 @@ const PRODUCTS = [
     "img": "images/shop/p056.webp",
     "gallery": [
       "images/shop-gallery/p056-2.webp"
+    ],
+    "sizes": [
+      {
+        "name": "Small",
+        "soldOut": true
+      },
+      {
+        "name": "Medium",
+        "soldOut": true
+      },
+      {
+        "name": "Large",
+        "soldOut": false
+      },
+      {
+        "name": "XLarge",
+        "soldOut": false
+      }
     ]
   },
   {
@@ -644,7 +1417,8 @@ const PRODUCTS = [
     "img": "images/shop/p057.webp",
     "gallery": [
       "images/shop-gallery/p057-2.webp"
-    ]
+    ],
+    "sizes": []
   },
   {
     "id": "p058",
@@ -656,6 +1430,24 @@ const PRODUCTS = [
     "gallery": [
       "images/shop-gallery/p058-2.webp",
       "images/shop-gallery/p058-3.webp"
+    ],
+    "sizes": [
+      {
+        "name": "Small",
+        "soldOut": true
+      },
+      {
+        "name": "Medium",
+        "soldOut": true
+      },
+      {
+        "name": "Large",
+        "soldOut": true
+      },
+      {
+        "name": "XLarge",
+        "soldOut": false
+      }
     ]
   },
   {
@@ -668,6 +1460,28 @@ const PRODUCTS = [
     "gallery": [
       "images/shop-gallery/p059-2.webp",
       "images/shop-gallery/p059-3.webp"
+    ],
+    "sizes": [
+      {
+        "name": "30",
+        "soldOut": true
+      },
+      {
+        "name": "32",
+        "soldOut": false
+      },
+      {
+        "name": "34",
+        "soldOut": false
+      },
+      {
+        "name": "36",
+        "soldOut": false
+      },
+      {
+        "name": "38",
+        "soldOut": true
+      }
     ]
   },
   {
@@ -681,7 +1495,8 @@ const PRODUCTS = [
       "images/shop-gallery/p060-2.webp",
       "images/shop-gallery/p060-3.webp",
       "images/shop-gallery/p060-4.webp"
-    ]
+    ],
+    "sizes": []
   },
   {
     "id": "p061",
@@ -692,6 +1507,20 @@ const PRODUCTS = [
     "img": "images/shop/p061.webp",
     "gallery": [
       "images/shop-gallery/p061-2.webp"
+    ],
+    "sizes": [
+      {
+        "name": "Medium",
+        "soldOut": true
+      },
+      {
+        "name": "Large",
+        "soldOut": true
+      },
+      {
+        "name": "XLarge",
+        "soldOut": false
+      }
     ]
   },
   {
@@ -704,6 +1533,28 @@ const PRODUCTS = [
     "gallery": [
       "images/shop-gallery/p062-2.webp",
       "images/shop-gallery/p062-3.webp"
+    ],
+    "sizes": [
+      {
+        "name": "8",
+        "soldOut": false
+      },
+      {
+        "name": "9",
+        "soldOut": false
+      },
+      {
+        "name": "10",
+        "soldOut": false
+      },
+      {
+        "name": "11",
+        "soldOut": false
+      },
+      {
+        "name": "12",
+        "soldOut": true
+      }
     ]
   },
   {
@@ -713,7 +1564,37 @@ const PRODUCTS = [
     "price": 228,
     "priceHigh": 229,
     "img": "images/shop/p063.webp",
-    "gallery": []
+    "gallery": [],
+    "sizes": [
+      {
+        "name": "30",
+        "soldOut": false
+      },
+      {
+        "name": "38",
+        "soldOut": true
+      },
+      {
+        "name": "31",
+        "soldOut": false
+      },
+      {
+        "name": "32",
+        "soldOut": false
+      },
+      {
+        "name": "33",
+        "soldOut": false
+      },
+      {
+        "name": "34",
+        "soldOut": true
+      },
+      {
+        "name": "36",
+        "soldOut": false
+      }
+    ]
   },
   {
     "id": "p064",
@@ -722,7 +1603,8 @@ const PRODUCTS = [
     "price": 26,
     "priceHigh": null,
     "img": "images/shop/p064.webp",
-    "gallery": []
+    "gallery": [],
+    "sizes": []
   },
   {
     "id": "p065",
@@ -731,7 +1613,8 @@ const PRODUCTS = [
     "price": 26,
     "priceHigh": null,
     "img": "images/shop/p065.webp",
-    "gallery": []
+    "gallery": [],
+    "sizes": []
   },
   {
     "id": "p066",
@@ -742,6 +1625,24 @@ const PRODUCTS = [
     "img": "images/shop/p066.webp",
     "gallery": [
       "images/shop-gallery/p066-2.webp"
+    ],
+    "sizes": [
+      {
+        "name": "Small",
+        "soldOut": true
+      },
+      {
+        "name": "Medium",
+        "soldOut": true
+      },
+      {
+        "name": "Large",
+        "soldOut": true
+      },
+      {
+        "name": "XLarge",
+        "soldOut": true
+      }
     ]
   },
   {
@@ -753,6 +1654,24 @@ const PRODUCTS = [
     "img": "images/shop/p067.webp",
     "gallery": [
       "images/shop-gallery/p067-2.webp"
+    ],
+    "sizes": [
+      {
+        "name": "Small",
+        "soldOut": true
+      },
+      {
+        "name": "Medium",
+        "soldOut": true
+      },
+      {
+        "name": "Large",
+        "soldOut": true
+      },
+      {
+        "name": "XLarge",
+        "soldOut": true
+      }
     ]
   },
   {
@@ -764,7 +1683,8 @@ const PRODUCTS = [
     "img": "images/shop/p068.webp",
     "gallery": [
       "images/shop-gallery/p068-2.webp"
-    ]
+    ],
+    "sizes": []
   },
   {
     "id": "p069",
@@ -775,6 +1695,24 @@ const PRODUCTS = [
     "img": "images/shop/p069.webp",
     "gallery": [
       "images/shop-gallery/p069-2.webp"
+    ],
+    "sizes": [
+      {
+        "name": "Small",
+        "soldOut": true
+      },
+      {
+        "name": "Medium",
+        "soldOut": true
+      },
+      {
+        "name": "Large",
+        "soldOut": true
+      },
+      {
+        "name": "XLarge",
+        "soldOut": true
+      }
     ]
   },
   {
@@ -796,6 +1734,24 @@ const PRODUCTS = [
       "images/shop-gallery/p070-10.webp",
       "images/shop-gallery/p070-11.webp",
       "images/shop-gallery/p070-12.webp"
+    ],
+    "sizes": [
+      {
+        "name": "Black",
+        "soldOut": false
+      },
+      {
+        "name": "Ombre Blue",
+        "soldOut": false
+      },
+      {
+        "name": "Brown Slate",
+        "soldOut": false
+      },
+      {
+        "name": "Black Tonal",
+        "soldOut": false
+      }
     ]
   },
   {
@@ -807,6 +1763,28 @@ const PRODUCTS = [
     "img": "images/shop/p071.webp",
     "gallery": [
       "images/shop-gallery/p071-2.webp"
+    ],
+    "sizes": [
+      {
+        "name": "Small",
+        "soldOut": false
+      },
+      {
+        "name": "Medium",
+        "soldOut": false
+      },
+      {
+        "name": "Large",
+        "soldOut": false
+      },
+      {
+        "name": "XLarge",
+        "soldOut": false
+      },
+      {
+        "name": "XXLarge",
+        "soldOut": false
+      }
     ]
   },
   {
@@ -816,7 +1794,8 @@ const PRODUCTS = [
     "price": 26,
     "priceHigh": null,
     "img": "images/shop/p072.webp",
-    "gallery": []
+    "gallery": [],
+    "sizes": []
   },
   {
     "id": "p073",
@@ -827,7 +1806,8 @@ const PRODUCTS = [
     "img": "images/shop/p073.webp",
     "gallery": [
       "images/shop-gallery/p073-2.webp"
-    ]
+    ],
+    "sizes": []
   },
   {
     "id": "p074",
@@ -838,7 +1818,8 @@ const PRODUCTS = [
     "img": "images/shop/p074.webp",
     "gallery": [
       "images/shop-gallery/p074-2.webp"
-    ]
+    ],
+    "sizes": []
   },
   {
     "id": "p075",
@@ -847,7 +1828,8 @@ const PRODUCTS = [
     "price": 18,
     "priceHigh": null,
     "img": "images/shop/p075.webp",
-    "gallery": []
+    "gallery": [],
+    "sizes": []
   },
   {
     "id": "p076",
@@ -858,6 +1840,28 @@ const PRODUCTS = [
     "img": "images/shop/p076.webp",
     "gallery": [
       "images/shop-gallery/p076-2.webp"
+    ],
+    "sizes": [
+      {
+        "name": "Small",
+        "soldOut": false
+      },
+      {
+        "name": "Medium",
+        "soldOut": false
+      },
+      {
+        "name": "Large",
+        "soldOut": false
+      },
+      {
+        "name": "XLarge",
+        "soldOut": false
+      },
+      {
+        "name": "XXLarge",
+        "soldOut": false
+      }
     ]
   },
   {
@@ -871,6 +1875,32 @@ const PRODUCTS = [
       "images/shop-gallery/p077-2.webp",
       "images/shop-gallery/p077-3.webp",
       "images/shop-gallery/p077-4.webp"
+    ],
+    "sizes": [
+      {
+        "name": "41",
+        "soldOut": false
+      },
+      {
+        "name": "42",
+        "soldOut": false
+      },
+      {
+        "name": "43",
+        "soldOut": false
+      },
+      {
+        "name": "44",
+        "soldOut": false
+      },
+      {
+        "name": "46",
+        "soldOut": false
+      },
+      {
+        "name": "48",
+        "soldOut": false
+      }
     ]
   },
   {
@@ -883,6 +1913,28 @@ const PRODUCTS = [
     "gallery": [
       "images/shop-gallery/p078-2.webp",
       "images/shop-gallery/p078-3.webp"
+    ],
+    "sizes": [
+      {
+        "name": "Small",
+        "soldOut": false
+      },
+      {
+        "name": "Medium",
+        "soldOut": false
+      },
+      {
+        "name": "Large",
+        "soldOut": false
+      },
+      {
+        "name": "XLarge",
+        "soldOut": false
+      },
+      {
+        "name": "XXLarge",
+        "soldOut": false
+      }
     ]
   },
   {
@@ -892,7 +1944,8 @@ const PRODUCTS = [
     "price": 9,
     "priceHigh": null,
     "img": "images/shop/p079.webp",
-    "gallery": []
+    "gallery": [],
+    "sizes": []
   },
   {
     "id": "p080",
@@ -905,6 +1958,32 @@ const PRODUCTS = [
       "images/shop-gallery/p080-2.webp",
       "images/shop-gallery/p080-3.webp",
       "images/shop-gallery/p080-4.webp"
+    ],
+    "sizes": [
+      {
+        "name": "41",
+        "soldOut": false
+      },
+      {
+        "name": "42",
+        "soldOut": false
+      },
+      {
+        "name": "43",
+        "soldOut": false
+      },
+      {
+        "name": "44",
+        "soldOut": false
+      },
+      {
+        "name": "46",
+        "soldOut": false
+      },
+      {
+        "name": "48",
+        "soldOut": false
+      }
     ]
   },
   {
@@ -919,7 +1998,8 @@ const PRODUCTS = [
       "images/shop-gallery/p081-3.webp",
       "images/shop-gallery/p081-4.webp",
       "images/shop-gallery/p081-5.webp"
-    ]
+    ],
+    "sizes": []
   },
   {
     "id": "p082",
@@ -930,7 +2010,8 @@ const PRODUCTS = [
     "img": "images/shop/p082.webp",
     "gallery": [
       "images/shop-gallery/p082-2.webp"
-    ]
+    ],
+    "sizes": []
   },
   {
     "id": "p083",
@@ -953,6 +2034,28 @@ const PRODUCTS = [
       "images/shop-gallery/p083-12.webp",
       "images/shop-gallery/p083-13.webp",
       "images/shop-gallery/p083-14.webp"
+    ],
+    "sizes": [
+      {
+        "name": "Black",
+        "soldOut": false
+      },
+      {
+        "name": "Dark Earth",
+        "soldOut": false
+      },
+      {
+        "name": "Black Tonal",
+        "soldOut": true
+      },
+      {
+        "name": "Brown Slate",
+        "soldOut": false
+      },
+      {
+        "name": "Ombre Blue",
+        "soldOut": false
+      }
     ]
   },
   {
@@ -965,6 +2068,24 @@ const PRODUCTS = [
     "gallery": [
       "images/shop-gallery/p084-2.webp",
       "images/shop-gallery/p084-3.webp"
+    ],
+    "sizes": [
+      {
+        "name": "Small",
+        "soldOut": true
+      },
+      {
+        "name": "Medium",
+        "soldOut": true
+      },
+      {
+        "name": "Large",
+        "soldOut": true
+      },
+      {
+        "name": "XLarge",
+        "soldOut": true
+      }
     ]
   },
   {
@@ -978,6 +2099,32 @@ const PRODUCTS = [
       "images/shop-gallery/p085-2.webp",
       "images/shop-gallery/p085-3.webp",
       "images/shop-gallery/p085-4.webp"
+    ],
+    "sizes": [
+      {
+        "name": "41",
+        "soldOut": false
+      },
+      {
+        "name": "42",
+        "soldOut": false
+      },
+      {
+        "name": "43",
+        "soldOut": false
+      },
+      {
+        "name": "44",
+        "soldOut": false
+      },
+      {
+        "name": "46",
+        "soldOut": false
+      },
+      {
+        "name": "48",
+        "soldOut": false
+      }
     ]
   },
   {
@@ -987,7 +2134,8 @@ const PRODUCTS = [
     "price": 18,
     "priceHigh": null,
     "img": "images/shop/p086.webp",
-    "gallery": []
+    "gallery": [],
+    "sizes": []
   },
   {
     "id": "p087",
@@ -999,6 +2147,32 @@ const PRODUCTS = [
     "gallery": [
       "images/shop-gallery/p087-2.webp",
       "images/shop-gallery/p087-3.webp"
+    ],
+    "sizes": [
+      {
+        "name": "8",
+        "soldOut": false
+      },
+      {
+        "name": "9",
+        "soldOut": false
+      },
+      {
+        "name": "10",
+        "soldOut": true
+      },
+      {
+        "name": "11",
+        "soldOut": true
+      },
+      {
+        "name": "11.5",
+        "soldOut": false
+      },
+      {
+        "name": "12",
+        "soldOut": false
+      }
     ]
   },
   {
@@ -1010,6 +2184,24 @@ const PRODUCTS = [
     "img": "images/shop/p088.webp",
     "gallery": [
       "images/shop-gallery/p088-2.webp"
+    ],
+    "sizes": [
+      {
+        "name": "Small",
+        "soldOut": true
+      },
+      {
+        "name": "Medium",
+        "soldOut": false
+      },
+      {
+        "name": "Large",
+        "soldOut": false
+      },
+      {
+        "name": "XLarge",
+        "soldOut": false
+      }
     ]
   },
   {
@@ -1019,7 +2211,33 @@ const PRODUCTS = [
     "price": 228,
     "priceHigh": null,
     "img": "images/shop/p089.webp",
-    "gallery": []
+    "gallery": [],
+    "sizes": [
+      {
+        "name": "30",
+        "soldOut": false
+      },
+      {
+        "name": "31",
+        "soldOut": false
+      },
+      {
+        "name": "32",
+        "soldOut": false
+      },
+      {
+        "name": "33",
+        "soldOut": false
+      },
+      {
+        "name": "34",
+        "soldOut": true
+      },
+      {
+        "name": "36",
+        "soldOut": false
+      }
+    ]
   },
   {
     "id": "p090",
@@ -1030,6 +2248,28 @@ const PRODUCTS = [
     "img": "images/shop/p090.webp",
     "gallery": [
       "images/shop-gallery/p090-2.webp"
+    ],
+    "sizes": [
+      {
+        "name": "Small",
+        "soldOut": false
+      },
+      {
+        "name": "Medium",
+        "soldOut": true
+      },
+      {
+        "name": "Large",
+        "soldOut": true
+      },
+      {
+        "name": "XLarge",
+        "soldOut": true
+      },
+      {
+        "name": "XXLarge",
+        "soldOut": true
+      }
     ]
   },
   {
@@ -1042,6 +2282,28 @@ const PRODUCTS = [
     "gallery": [
       "images/shop-gallery/p091-2.webp",
       "images/shop-gallery/p091-3.webp"
+    ],
+    "sizes": [
+      {
+        "name": "8",
+        "soldOut": false
+      },
+      {
+        "name": "9",
+        "soldOut": false
+      },
+      {
+        "name": "10",
+        "soldOut": false
+      },
+      {
+        "name": "11",
+        "soldOut": false
+      },
+      {
+        "name": "12",
+        "soldOut": false
+      }
     ]
   },
   {
@@ -1054,7 +2316,8 @@ const PRODUCTS = [
     "gallery": [
       "images/shop-gallery/p092-2.webp",
       "images/shop-gallery/p092-3.webp"
-    ]
+    ],
+    "sizes": []
   },
   {
     "id": "p093",
@@ -1063,7 +2326,8 @@ const PRODUCTS = [
     "price": 9,
     "priceHigh": null,
     "img": "images/shop/p093.webp",
-    "gallery": []
+    "gallery": [],
+    "sizes": []
   },
   {
     "id": "p094",
@@ -1076,6 +2340,24 @@ const PRODUCTS = [
       "images/shop-gallery/p094-2.webp",
       "images/shop-gallery/p094-3.webp",
       "images/shop-gallery/p094-4.webp"
+    ],
+    "sizes": [
+      {
+        "name": "Small",
+        "soldOut": true
+      },
+      {
+        "name": "Medium",
+        "soldOut": true
+      },
+      {
+        "name": "Large",
+        "soldOut": false
+      },
+      {
+        "name": "XLarge",
+        "soldOut": true
+      }
     ]
   },
   {
@@ -1089,7 +2371,8 @@ const PRODUCTS = [
       "images/shop-gallery/p095-2.webp",
       "images/shop-gallery/p095-3.webp",
       "images/shop-gallery/p095-4.webp"
-    ]
+    ],
+    "sizes": []
   },
   {
     "id": "p096",
@@ -1100,6 +2383,32 @@ const PRODUCTS = [
     "img": "images/shop/p096.webp",
     "gallery": [
       "images/shop-gallery/p096-2.webp"
+    ],
+    "sizes": [
+      {
+        "name": "41",
+        "soldOut": false
+      },
+      {
+        "name": "42",
+        "soldOut": false
+      },
+      {
+        "name": "43",
+        "soldOut": true
+      },
+      {
+        "name": "44",
+        "soldOut": false
+      },
+      {
+        "name": "46",
+        "soldOut": false
+      },
+      {
+        "name": "48",
+        "soldOut": false
+      }
     ]
   },
   {
@@ -1109,7 +2418,8 @@ const PRODUCTS = [
     "price": 45,
     "priceHigh": null,
     "img": "images/shop/p097.webp",
-    "gallery": []
+    "gallery": [],
+    "sizes": []
   },
   {
     "id": "p098",
@@ -1121,7 +2431,8 @@ const PRODUCTS = [
     "gallery": [
       "images/shop-gallery/p098-2.webp",
       "images/shop-gallery/p098-3.webp"
-    ]
+    ],
+    "sizes": []
   },
   {
     "id": "p099",
@@ -1133,6 +2444,28 @@ const PRODUCTS = [
     "gallery": [
       "images/shop-gallery/p099-2.webp",
       "images/shop-gallery/p099-3.webp"
+    ],
+    "sizes": [
+      {
+        "name": "Small",
+        "soldOut": false
+      },
+      {
+        "name": "Medium",
+        "soldOut": true
+      },
+      {
+        "name": "Large",
+        "soldOut": false
+      },
+      {
+        "name": "XLarge",
+        "soldOut": false
+      },
+      {
+        "name": "XXLarge",
+        "soldOut": false
+      }
     ]
   },
   {
@@ -1144,7 +2477,8 @@ const PRODUCTS = [
     "img": "images/shop/p100.webp",
     "gallery": [
       "images/shop-gallery/p100-2.webp"
-    ]
+    ],
+    "sizes": []
   },
   {
     "id": "p101",
@@ -1156,6 +2490,28 @@ const PRODUCTS = [
     "gallery": [
       "images/shop-gallery/p101-2.webp",
       "images/shop-gallery/p101-3.webp"
+    ],
+    "sizes": [
+      {
+        "name": "Small",
+        "soldOut": true
+      },
+      {
+        "name": "Medium",
+        "soldOut": false
+      },
+      {
+        "name": "Large",
+        "soldOut": false
+      },
+      {
+        "name": "XLarge",
+        "soldOut": false
+      },
+      {
+        "name": "XXLarge",
+        "soldOut": false
+      }
     ]
   },
   {
@@ -1167,7 +2523,8 @@ const PRODUCTS = [
     "img": "images/shop/p102.webp",
     "gallery": [
       "images/shop-gallery/p102-2.webp"
-    ]
+    ],
+    "sizes": []
   },
   {
     "id": "p103",
@@ -1178,6 +2535,28 @@ const PRODUCTS = [
     "img": "images/shop/p103.webp",
     "gallery": [
       "images/shop-gallery/p103-2.webp"
+    ],
+    "sizes": [
+      {
+        "name": "Small",
+        "soldOut": false
+      },
+      {
+        "name": "Medium",
+        "soldOut": false
+      },
+      {
+        "name": "Large",
+        "soldOut": false
+      },
+      {
+        "name": "XLarge",
+        "soldOut": false
+      },
+      {
+        "name": "XXL",
+        "soldOut": false
+      }
     ]
   },
   {
@@ -1189,6 +2568,24 @@ const PRODUCTS = [
     "img": "images/shop/p104.webp",
     "gallery": [
       "images/shop-gallery/p104-2.webp"
+    ],
+    "sizes": [
+      {
+        "name": "Small",
+        "soldOut": false
+      },
+      {
+        "name": "Medium",
+        "soldOut": false
+      },
+      {
+        "name": "Large",
+        "soldOut": true
+      },
+      {
+        "name": "XLarge",
+        "soldOut": true
+      }
     ]
   },
   {
@@ -1200,7 +2597,8 @@ const PRODUCTS = [
     "img": "images/shop/p105.webp",
     "gallery": [
       "images/shop-gallery/p105-2.webp"
-    ]
+    ],
+    "sizes": []
   },
   {
     "id": "p106",
@@ -1212,7 +2610,8 @@ const PRODUCTS = [
     "gallery": [
       "images/shop-gallery/p106-2.webp",
       "images/shop-gallery/p106-3.webp"
-    ]
+    ],
+    "sizes": []
   },
   {
     "id": "p107",
@@ -1223,6 +2622,28 @@ const PRODUCTS = [
     "img": "images/shop/p107.webp",
     "gallery": [
       "images/shop-gallery/p107-2.webp"
+    ],
+    "sizes": [
+      {
+        "name": "Small",
+        "soldOut": false
+      },
+      {
+        "name": "Medium",
+        "soldOut": true
+      },
+      {
+        "name": "Large",
+        "soldOut": true
+      },
+      {
+        "name": "XLarge",
+        "soldOut": false
+      },
+      {
+        "name": "XXLarge",
+        "soldOut": true
+      }
     ]
   },
   {
@@ -1234,6 +2655,24 @@ const PRODUCTS = [
     "img": "images/shop/p108.webp",
     "gallery": [
       "images/shop-gallery/p108-2.webp"
+    ],
+    "sizes": [
+      {
+        "name": "Small",
+        "soldOut": false
+      },
+      {
+        "name": "Medium",
+        "soldOut": true
+      },
+      {
+        "name": "Large",
+        "soldOut": false
+      },
+      {
+        "name": "XLarge",
+        "soldOut": true
+      }
     ]
   },
   {
@@ -1247,7 +2686,8 @@ const PRODUCTS = [
       "images/shop-gallery/p109-2.webp",
       "images/shop-gallery/p109-3.webp",
       "images/shop-gallery/p109-4.webp"
-    ]
+    ],
+    "sizes": []
   },
   {
     "id": "p110",
@@ -1259,6 +2699,28 @@ const PRODUCTS = [
     "gallery": [
       "images/shop-gallery/p110-2.webp",
       "images/shop-gallery/p110-3.webp"
+    ],
+    "sizes": [
+      {
+        "name": "Small",
+        "soldOut": false
+      },
+      {
+        "name": "Medium",
+        "soldOut": false
+      },
+      {
+        "name": "Large",
+        "soldOut": false
+      },
+      {
+        "name": "XLarge",
+        "soldOut": false
+      },
+      {
+        "name": "XXLarge",
+        "soldOut": false
+      }
     ]
   },
   {
@@ -1271,6 +2733,32 @@ const PRODUCTS = [
     "gallery": [
       "images/shop-gallery/p111-2.webp",
       "images/shop-gallery/p111-3.webp"
+    ],
+    "sizes": [
+      {
+        "name": "41",
+        "soldOut": true
+      },
+      {
+        "name": "42",
+        "soldOut": false
+      },
+      {
+        "name": "43",
+        "soldOut": true
+      },
+      {
+        "name": "44",
+        "soldOut": true
+      },
+      {
+        "name": "46",
+        "soldOut": true
+      },
+      {
+        "name": "48",
+        "soldOut": true
+      }
     ]
   },
   {
@@ -1282,7 +2770,8 @@ const PRODUCTS = [
     "img": "images/shop/p112.webp",
     "gallery": [
       "images/shop-gallery/p112-2.webp"
-    ]
+    ],
+    "sizes": []
   },
   {
     "id": "p113",
@@ -1291,7 +2780,8 @@ const PRODUCTS = [
     "price": 26,
     "priceHigh": null,
     "img": "images/shop/p113.webp",
-    "gallery": []
+    "gallery": [],
+    "sizes": []
   },
   {
     "id": "p114",
@@ -1303,6 +2793,28 @@ const PRODUCTS = [
     "gallery": [
       "images/shop-gallery/p114-2.webp",
       "images/shop-gallery/p114-3.webp"
+    ],
+    "sizes": [
+      {
+        "name": "Small",
+        "soldOut": true
+      },
+      {
+        "name": "Medium",
+        "soldOut": false
+      },
+      {
+        "name": "Large",
+        "soldOut": false
+      },
+      {
+        "name": "XLarge",
+        "soldOut": true
+      },
+      {
+        "name": "XXLarge",
+        "soldOut": false
+      }
     ]
   },
   {
@@ -1317,7 +2829,8 @@ const PRODUCTS = [
       "images/shop-gallery/p115-3.webp",
       "images/shop-gallery/p115-4.webp",
       "images/shop-gallery/p115-5.webp"
-    ]
+    ],
+    "sizes": []
   },
   {
     "id": "p116",
@@ -1329,6 +2842,7 @@ const PRODUCTS = [
     "gallery": [
       "images/shop-gallery/p116-2.webp",
       "images/shop-gallery/p116-3.webp"
-    ]
+    ],
+    "sizes": []
   }
 ];
