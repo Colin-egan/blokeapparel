@@ -389,21 +389,28 @@ p:last-child { margin-bottom: 0; }
 .mascot-lg { height: 64px; width: auto; margin-bottom: 18px; }
 .mascot-flip { transform: scaleX(-1); }
 
-/* Kiwi easter egg — perched on top of a word, like it just landed there */
+/* Kiwi easter egg — mostly tucked behind the period, ducks away on hover */
 .kiwi-perch {
   position: relative;
+  z-index: 0;
   display: inline-block;
+  pointer-events: none;
 }
 .kiwi-perch-bird {
   position: absolute;
-  bottom: calc(100% + 3px);
-  left: 50%;
-  height: 26px;
+  z-index: -1;
+  bottom: -4px;
+  right: 8px;
+  height: 22px;
   width: auto;
-  transform: translateX(-73%) rotate(-6deg);
-  transform-origin: bottom center;
-  pointer-events: none;
-  user-select: none;
+  transform: rotate(-10deg);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  pointer-events: auto;
+  cursor: default;
+}
+.kiwi-perch-bird:hover {
+  opacity: 0;
+  transform: rotate(-10deg) translateY(4px);
 }
 @media (max-width: 560px) {
   .kiwi-perch-bird { display: none; }
@@ -1297,14 +1304,14 @@ p:last-child { margin-bottom: 0; }
 
 .product-modal-thumbs {
   display: flex;
-  gap: 8px;
-  padding: 10px;
+  gap: 6px;
+  padding: 8px;
   overflow-x: auto;
 }
 .product-modal-thumbs button {
   flex-shrink: 0;
-  width: 52px;
-  height: 65px;
+  width: 36px;
+  height: 45px;
   padding: 0;
   border: 2px solid transparent;
   border-radius: 4px;

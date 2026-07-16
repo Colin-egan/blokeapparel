@@ -70,7 +70,7 @@
 
   function resultHtml(p) {
     var price = p.priceHigh && p.priceHigh > p.price
-      ? '$' + p.price + '&ndash;$' + Math.round(p.priceHigh)
+      ? '$' + p.price + '–$' + Math.round(p.priceHigh)
       : '$' + p.price;
     return (
       '<li>' +

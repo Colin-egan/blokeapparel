@@ -19,7 +19,7 @@
 
   function formatPrice(p) {
     if (p.priceHigh && p.priceHigh > p.price) {
-      return '$' + p.price + '&ndash;$' + Math.round(p.priceHigh);
+      return '$' + p.price + '–$' + Math.round(p.priceHigh);
     }
     return '$' + p.price;
   }
