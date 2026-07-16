@@ -237,6 +237,12 @@ p:last-child { margin-bottom: 0; }
   object-fit: cover;
   object-position: 30% center;
 }
+.hero-media::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(33, 28, 21, 0.28);
+}
 .hero-inner {
   max-width: 700px;
   background: rgba(237, 228, 210, 0.82);
@@ -620,7 +626,7 @@ p:last-child { margin-bottom: 0; }
 }
 
 /* ---------------------------------------------------
-   On the gram (Instagram feed mirror)
+   On the gram (Elfsight Instagram feed)
 --------------------------------------------------- */
 .instagram { padding: 100px 0; border-bottom: 1px solid var(--line); }
 
@@ -640,75 +646,6 @@ p:last-child { margin-bottom: 0; }
 }
 .instagram-handle:hover { color: var(--ink); border-color: var(--ink); }
 .instagram-follow { flex-shrink: 0; }
-
-.insta-grid {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 14px;
-}
-.insta-grid li {
-  position: relative;
-  aspect-ratio: 1 / 1;
-  overflow: hidden;
-  border-radius: 4px;
-  border: 1px solid var(--line);
-  background: var(--paper);
-}
-.insta-grid a {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-.insta-grid img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.5s ease;
-}
-.insta-grid a:hover img,
-.insta-grid a:focus-visible img { transform: scale(1.06); }
-
-.insta-caption {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 10px 12px 12px;
-  background: linear-gradient(to top, rgba(33, 28, 21, 0.9), rgba(33, 28, 21, 0));
-  color: var(--paper);
-  font-family: var(--font-mono);
-  font-size: 12px;
-  line-height: 1.35;
-  transform: translateY(100%);
-  transition: transform 0.3s ease;
-}
-.insta-grid a:hover .insta-caption,
-.insta-grid a:focus-visible .insta-caption { transform: translateY(0); }
-
-/* Kiwi easter egg — tucked behind a post, peeking out at the corner */
-.insta-grid li.insta-peek { overflow: visible; }
-.insta-grid li.insta-peek a { overflow: hidden; border-radius: 4px; }
-.insta-grid .kiwi-peek {
-  position: absolute;
-  bottom: -10px;
-  right: -12px;
-  height: 34px;
-  width: auto;
-  transform: scaleX(-1) rotate(8deg);
-  pointer-events: none;
-  user-select: none;
-}
-
-@media (max-width: 900px) {
-  .insta-grid { grid-template-columns: repeat(3, 1fr); }
-}
-@media (max-width: 560px) {
-  .insta-grid { grid-template-columns: repeat(2, 1fr); }
-  .insta-grid .kiwi-peek { height: 26px; bottom: -7px; right: -8px; }
-}
 
 /* ---------------------------------------------------
    Gift card banner
